@@ -109,7 +109,62 @@ const practiceList = [
     },
     place: ['第1スタジオ'],
     label: '今井合奏'
-  }
+  },
+  {
+    id: '20190525',
+    recordStatus: true,
+    time: {
+      timestamp: 1558774800,
+      date: '2019年5月25日(土)',
+      time: '18:00'
+    },
+    place: ['第5スタジオ'],
+    label: '今井合奏'
+  },
+  {
+    id: '20190601',
+    recordStatus: true,
+    time: {
+      timestamp: 1559379600,
+      date: '2019年6月1日(土)',
+      time: '18:00'
+    },
+    place: ['第2スタジオ'],
+    label: '指揮なし'
+  },
+  {
+    id: '20190608',
+    recordStatus: true,
+    time: {
+      timestamp: 1559984400,
+      date: '2019年6月8日(土)',
+      time: '18:00'
+    },
+    place: ['第5スタジオ'],
+    label: '今井合奏'
+  },
+  {
+    id: '20190615',
+    recordStatus: true,
+    time: {
+      timestamp: 1560589200,
+      date: '2019年6月15日(土)',
+      time: '18:00'
+    },
+    place: ['第2スタジオ'],
+    label: '今井合奏'
+  },
+  {
+    id: '20190622',
+    recordStatus: true,
+    time: {
+      timestamp: 1561194000,
+      date: '2019年6月22日(土)',
+      time: '18:00'
+    },
+    place: ['第2スタジオ'],
+    label: '高橋合奏'
+  },
 ]
 
 module.exports = {

@@ -949,7 +949,7 @@ const practiceAudio = [
       {
         file: 0,
         list: [
-          {time: '00:00', label: '録音開始'}
+          // {time: '00:00', label: '録音開始'}
         ]
       }
     ]
@@ -958,13 +958,88 @@ const practiceAudio = [
     id: '20190518',
     directory: '20190518/',
     file: [
+      {label: 'ファイル1', path: '002.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          // {time: '00:00', label: '録音開始'}
+        ]
+      }
+    ]
+  },
+  {
+    id: '20190525',
+    directory: '20190525/',
+    file: [
       {label: 'ファイル1', path: '001.mp3'}
     ],
     contents: [
       {
         file: 0,
         list: [
-          {time: '00:00', label: '録音開始'}
+          // {time: '00:00', label: '録音開始'}
+        ]
+      }
+    ]
+  },
+  {
+    id: '20190601',
+    directory: '20190601/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          // {time: '00:00', label: '録音開始'}
+        ]
+      }
+    ]
+  },
+  {
+    id: '20190608',
+    directory: '20190608/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          // {time: '00:00', label: '録音開始'}
+        ]
+      }
+    ]
+  },
+  {
+    id: '20190615',
+    directory: '20190615/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          // {time: '00:00', label: '録音開始'}
+        ]
+      }
+    ]
+  },
+  {
+    id: '20190622',
+    directory: '20190622/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          // {time: '00:00', label: '録音開始'}
         ]
       }
     ]
