@@ -48,11 +48,9 @@ app.get('/', (req, res) => {
 
 // API 設定
 app.post('/api/concert', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/concert: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  const session = req.body.session
+  console.log('[' + lib.showTime() + '] api/concert: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       concert.loadMain((docs) => {
         if (!docs) return res.json({status: true, list: []})
@@ -62,6 +60,7 @@ app.post('/api/concert', (req, res) => {
   })
 })
 
+// winds-n.com/history で使用
 app.post('/web/concert', (req, res) => {
   console.log('[' + lib.showTime() + '] web/concert')
   concert.loadMain((docs) => {
@@ -71,11 +70,9 @@ app.post('/web/concert', (req, res) => {
 })
 
 app.post('/api/audio', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/audio: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  const session = req.body.session
+  console.log('[' + lib.showTime() + '] api/audio: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       audio.loadAudio((docs) => {
         if (!docs) return res.json({status: true, list: []})
@@ -86,12 +83,10 @@ app.post('/api/audio', (req, res) => {
 })
 
 app.post('/api/photo', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
+  const session = req.body.session
   const id = req.body.id
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/photo: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  console.log('[' + lib.showTime() + '] api/photo: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       photo.loadPhoto(id, (docs) => {
         if (!docs) return res.json({status: true, photo: false, list: []})
@@ -102,12 +97,10 @@ app.post('/api/photo', (req, res) => {
 })
 
 app.post('/api/video', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
+  const session = req.body.session
   const id = req.body.id
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/video: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  console.log('[' + lib.showTime() + '] api/video: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       video.loadVideo(id, (docs) => {
         if (!docs) return res.json({status: true, video: false, list: []})
@@ -119,11 +112,9 @@ app.post('/api/video', (req, res) => {
 })
 
 app.post('/api/practice', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/practice: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  const session = req.body.session
+  console.log('[' + lib.showTime() + '] api/practice: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       practice.loadPractice((docs) => {
         if (!docs) return res.json({status: true, list: []})
@@ -134,11 +125,9 @@ app.post('/api/practice', (req, res) => {
 })
 
 app.post('/api/record', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/record: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  const session = req.body.session
+  console.log('[' + lib.showTime() + '] api/record: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       record.loadRecord((docs) => {
         if (!docs) return res.json({status: true, list: []})
@@ -149,11 +138,9 @@ app.post('/api/record', (req, res) => {
 })
 
 app.post('/api/source', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/source: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  const session = req.body.session
+  console.log('[' + lib.showTime() + '] api/source: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       source.loadSource((docs) => {
         if (!docs) return res.json({status: true, list: []})
@@ -164,11 +151,9 @@ app.post('/api/source', (req, res) => {
 })
 
 app.post('/api/reference', (req, res) => {
-  const userid = req.body.userid
-  const token = req.body.token
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/reference: ' + userid + ', (token), version: ' + version)
-  lib.authAPI({userid, token}, (authResult) => {
+  const session = req.body.session
+  console.log('[' + lib.showTime() + '] api/reference: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
     if (authResult) {
       reference.loadReference((docs) => {
         if (!docs) return res.json({status: true, list: []})
@@ -179,10 +164,9 @@ app.post('/api/reference', (req, res) => {
 })
 
 app.post('/api/count', (req, res) => {
-  const userid = req.body.userid
+  const session = req.body.session
   const play = req.body.play
-  const version = req.body.version
-  console.log('[' + lib.showTime() + '] api/count: ' + userid + ', version: ' + version + ', ' + play)
+  console.log('[' + lib.showTime() + '] api/count: ' + session.userid + ', version: ' + session.version + ', ' + play)
   return res.json({})
 })
 
