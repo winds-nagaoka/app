@@ -48,10 +48,10 @@ const sourceList = [
       {audio: 0, title: '五月の風', composer: '真島俊夫'},
       {audio: 1, title: '詩的間奏曲', composer: 'J.バーンズ'},
       {audio: 2, title: '祝典のための音楽', composer: 'P.スパーク'},
-      {title: 'スラブ舞曲', composer: 'ドヴォルザーク', arranger: '河本先生'},
-      {audio: 5, title: '富士山 〜北斎の版画に触発されて〜', composer: '真島俊夫'},
-      {audio: 6, title: '「あんたがたどこさ」の主題による幻想曲', composer: '林大地'},
-      {audio: 7, title: 'ブロックM', composer: 'J.H.ビリック'}
+      {audio: 5, title: 'スラブ舞曲', composer: 'A.ドヴォルザーク'},
+      {audio: 8, title: '富士山 〜北斎の版画に触発されて〜', composer: '真島俊夫'},
+      {audio: 9, title: '「あんたがたどこさ」の主題による幻想曲', composer: '林大地'},
+      {audio: 10, title: 'ブロックM', composer: 'J.H.ビリック'}
     ]
   }
 ]
