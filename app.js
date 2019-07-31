@@ -15,8 +15,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 // CORSを許可する
 app.use((req, res, next) => {
-  // res.header('Access-Control-Allow-Origin', 'http://192.168.1.22:3001')
-  // res.header('Access-Control-Allow-Origin', 'https://member.winds-n.com')
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
   next()
