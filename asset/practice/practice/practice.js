@@ -209,6 +209,17 @@ const practiceList = [
     place: ['第1スタジオ'],
     label: '今井合奏'
   },
+  {
+    id: '20190728',
+    recordStatus: true,
+    time: {
+      timestamp: 1564304400,
+      date: '2019年7月28日(日)',
+      time: '18:00'
+    },
+    place: ['第5スタジオ'],
+    label: '高橋合奏'
+  },
 ]
 
 module.exports = {
