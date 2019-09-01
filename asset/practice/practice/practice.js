@@ -242,6 +242,17 @@ const practiceList = [
     place: ['第1スタジオ'],
     label: '今井合奏'
   },
+  {
+    id: '20190831',
+    recordStatus: true,
+    time: {
+      timestamp: 1567242000,
+      date: '2019年8月31日(土)',
+      time: '18:00'
+    },
+    place: ['コンサートホール'],
+    label: '河本先生'
+  },
 ]
 
 module.exports = {
