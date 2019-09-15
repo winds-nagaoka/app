@@ -1170,6 +1170,19 @@ const practiceAudio = [
       }
     ]
   },
+  {
+    id: '20190915',
+    directory: '20190915/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: []
+      }
+    ]
+  },
   // {
   //   // 日付などユニークなもの
   //   id: '20190316',
