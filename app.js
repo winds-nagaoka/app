@@ -168,4 +168,11 @@ app.post('/api/count', (req, res) => {
   return res.json({})
 })
 
+app.post('/api/path', (req, res) => {
+  const session = req.body.session
+  const path = req.body.path
+  console.log('[' + lib.showTime() + '] api/path: ' + session.userid + ', version: ' + session.version + ', ' + path)
+  return res.json({})
+})
+
 app.listen(3007)
