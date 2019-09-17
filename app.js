@@ -168,6 +168,13 @@ app.post('/api/count', (req, res) => {
   return res.json({})
 })
 
+app.post('/api/seek', (req, res) => {
+  const session = req.body.session
+  const seek = req.body.seek
+  console.log('[' + lib.showTime() + '] api/seek: ' + session.userid + ', version: ' + session.version + ', ' + seek)
+  return res.json({})
+})
+
 app.post('/api/path', (req, res) => {
   const session = req.body.session
   const path = req.body.path
