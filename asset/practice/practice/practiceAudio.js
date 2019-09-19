@@ -1075,7 +1075,22 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '00:00', label: '合奏開始'},
+          {time: '00:43', label: 'チューニング'},
+          {time: '02:45', label: '基礎合奏', contents: [
+            {time: '03:22', label: 'トレーニング8 ハーモニー153'},
+            {time: '04:59', label: 'トレーニング8 ハーモニー153'}
+          ]},
+          {time: '06:14', label: '富士山'},
+          {time: '48:00', label: '休憩'},
+          {time: '59:35', label: 'スラヴ舞曲 Op.46-2'},
+          {time: '1:18:15', label: '祝典のための音楽', contents: [
+            {time: '1:18:50', label: '第1楽章'},
+            {time: '1:30:57', label: '第2楽章'},
+            {time: '1:44:14', label: '第3楽章'},
+          ]},
+        ]
       }
     ]
   },
@@ -1088,7 +1103,18 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '00:00', label: '合奏開始'},
+          {time: '02:20', label: 'チューニング'},
+          {time: '03:40', label: '基礎合奏', contents: [
+            {time: '04:48', label: 'トレーニング5 スケール2'},
+          ]},
+          {time: '06:16', label: '五月の風'},
+          {time: '24:32', label: 'スラヴ舞曲 Op.46-8'},
+          {time: '50:13', label: '休憩'},
+          {time: '1:03:47', label: 'スラヴ舞曲 Op.72-2'},
+          {time: '1:27:07', label: '富士山'},
+        ]
       }
     ]
   },
@@ -1101,7 +1127,27 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '00:00', label: '合奏開始'},
+          {time: '00:39', label: 'チューニング'},
+          {time: '02:03', label: '基礎合奏', contents: [
+            {time: '03:19', label: 'トレーニング3'},
+            {time: '06:14', label: 'トレーニング8'},
+            {time: '07:40', label: 'トレーニング8'},
+          ]},
+          {time: '08:53', label: 'スラヴ舞曲 Op.46-2'},
+          {time: '35:30', label: '「あんたがたどこさ」の主題による幻想曲'},
+          {time: '51:37', label: '休憩'},
+          {time: '1:00:48', label: '祝典のための音楽', contents: [
+            {time: '1:01:43', label: '第1楽章'},
+            {time: '1:24:07', label: '第2楽章'},
+          ]},
+          {time: '1:32:03', label: '休憩'},
+          {time: '1:34:11', label: '祝典のための音楽', contents: [
+            {time: '1:35:08', label: '第3楽章'},
+          ]},
+          {time: '1:58:06', label: '連絡'}
+        ]
       }
     ]
   },
@@ -1114,7 +1160,16 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '00:00', label: '合奏開始'},
+          {time: '00:38', label: '五月の風'},
+          {time: '25:22', label: '詩的間奏曲'},
+          {time: '50:15', label: '休憩'},
+          {time: '57:52', label: 'スラヴ舞曲 Op.46-2'},
+          {time: '1:19:42', label: 'スラヴ舞曲 Op.72-2'},
+          {time: '1:30:29', label: '富士山'},
+          {time: '2:31:50', label: '連絡'}
+        ]
       }
     ]
   },
@@ -1127,7 +1182,27 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '06:48', label: '合奏開始'},
+          {time: '08:18', label: 'チューニング'},
+          {time: '09:28', label: '基礎合奏', contents: [
+            {time: '10:23', label: 'トレーニング8'},
+            {time: '11:56', label: 'トレーニング8'}
+          ]},
+          {time: '13:21', label: '五月の風'},
+          {time: '24:55', label: '「あんたがたどこさ」の主題による幻想曲'},
+          {time: '33:12', label: '詩的間奏曲'},
+          {time: '54:43', label: '富士山'},
+          {time: '1:26:08', label: '休憩'},
+          {time: '1:37:02', label: '祝典のための音楽', contents: [
+            {time: '1:38:55', label: '通し'},
+            {time: '1:54:10', label: '第1楽章'},
+            {time: '2:06:19', label: '第2楽章'},
+            {time: '2:10:13', label: '第3楽章'},
+          ]},
+          {time: '2:17:46', label: 'スラヴ舞曲 Op.46-8'},
+          {time: '2:35:53', label: '連絡'}
+        ]
       }
     ]
   },
@@ -1140,7 +1215,21 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '36:51', label: '合奏開始'},
+          {time: '38:25', label: 'チューニング'},
+          {time: '41:34', label: '基礎合奏', contents: [
+            {time: '42:34', label: 'トレーニング8'},
+            {time: '44:30', label: 'トレーニング8'}
+          ]},
+          {time: '50:05', label: '詩的間奏曲', contents: [
+            {time: '50:34', label: '通し'}
+          ]},
+          {time: '1:26:18', label: '富士山'},
+          {time: '1:40:47', label: '休憩'},
+          {time: '1:55:02', label: '富士山'},
+          {time: '3:16:59', label: '連絡'}
+        ]
       }
     ]
   },
@@ -1153,7 +1242,25 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '25:03', label: '合奏開始'},
+          {time: '26:52', label: 'チューニング'},
+          {time: '28:05', label: '基礎合奏', contents: [
+            {time: '29:28', label: 'トレーニング8'},
+            {time: '31:15', label: 'トレーニング8'},
+            {time: '32:09', label: 'トレーニング8'}
+          ]},
+          {time: '33:41', label: '祝典のための音楽', contents: [
+            {time: '34:51', label: '第1楽章'},
+            {time: '1:19:42', label: '第2楽章'}
+          ]},
+          {time: '1:31:14', label: '休憩'},
+          {time: '1:41:28', label: '祝典のための音楽', contents: [
+            {time: '1:41:40', label: '第2楽章'},
+            {time: '2:03:59', label: '第3楽章'},
+          ]},
+          {time: '2:49:33', label: '連絡'}
+        ]
       }
     ]
   },
@@ -1166,7 +1273,16 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '33:33', label: '合奏開始'},
+          {time: '34:50', label: 'チューニング'},
+          {time: '37:43', label: '「あんたがたどこさ」の主題による幻想曲'},
+          {time: '1:35:18', label: '休憩'},
+          {time: '1:45:05', label: 'スラヴ舞曲 Op.46-2'},
+          {time: '2:26:55', label: 'スラヴ舞曲 Op.72-2'},
+          {time: '3:06:25', label: 'スラヴ舞曲 Op.46-8'},
+          {time: '3:13:21', label: '連絡'}
+        ]
       }
     ]
   },
@@ -1179,7 +1295,24 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: []
+        list: [
+          {time: '17:53', label: '合奏開始'},
+          {time: '19:00', label: 'チューニング'},
+          {time: '21:20', label: '基礎合奏', contents: [
+            {time: '22:03', label: 'トレーニング8'},
+            {time: '23:35', label: 'トレーニング8'}
+          ]},
+          {time: '24:42', label: '祝典のための音楽', contents: [
+            {time: '24:45', label: '第3楽章'}
+          ]},
+          {time: '1:29:56', label: '休憩'},
+          {time: '1:40:30', label: '祝典のための音楽', contents: [
+            {time: '1:40:30', label: '第3楽章'},
+            {time: '2:23:27', label: '第3楽章 通し'},
+            {time: '2:29:36', label: '第1楽章'}
+          ]},
+          {time: '2:45:05', label: '連絡'}
+        ]
       }
     ]
   },
