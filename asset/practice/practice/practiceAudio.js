@@ -1344,6 +1344,40 @@ const practiceAudio = [
       }
     ]
   },
+  {
+    id: '20190922',
+    directory: '20190922/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          {time: '25:08', label: '合奏開始'},
+          {time: '25:22', label: 'チューニング'},
+          {time: '27:55', label: '基礎合奏', contents: [
+            {time: '29:39', label: 'コラール1'},
+            {time: '31:29', label: 'コラール1'}
+          ]},
+          {time: '32:48', label: '「あんたがたどこさ」の主題による幻想曲', contents: [
+            {time: '34:33', label: '通し'}
+          ]},
+          {time: '59:07', label: '祝典のための音楽', contents: [
+            {time: '1:01:36', label: '通し'}
+          ]},
+          {time: '1:15:26', label: '休憩'},
+          {time: '1:28:57', label: '祝典のための音楽', contents: [
+            {time: '1:31:21', label: '第1楽章'},
+            {time: '1:50:35', label: '第2楽章'},
+            {time: '2:06:03', label: '第3楽章'}
+          ]},
+          {time: '2:22:30', label: '富士山'},
+          {time: '2:54:48', label: '連絡'}
+        ]
+      }
+    ]
+  },
   // {
   //   // 日付などユニークなもの
   //   id: '20190316',
