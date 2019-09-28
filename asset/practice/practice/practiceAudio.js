@@ -1378,6 +1378,31 @@ const practiceAudio = [
       }
     ]
   },
+  {
+    id: '20190928',
+    directory: '20190928/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          {time: '24:42', label: '合奏開始'},
+          {time: '25:05', label: 'チューニング'},
+          {time: '28:15', label: '詩的間奏曲'},
+          {time: '1:18:31', label: '休憩'},
+          {time: '1:27:02', label: '富士山'},
+          {time: '2:45:45', label: '祝典のための音楽', contents: [
+            {time: '2:47:45', label: '第1楽章'},
+            {time: '2:52:34', label: '第2楽章'},
+            {time: '3:01:26', label: '第3楽章'}
+          ]},
+          {time: '3:05:36', label: '連絡'}
+        ]
+      }
+    ]
+  },
   // {
   //   // 日付などユニークなもの
   //   id: '20190316',
