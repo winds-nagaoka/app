@@ -1403,6 +1403,44 @@ const practiceAudio = [
       }
     ]
   },
+  {
+    id: '20191005',
+    directory: '20191005/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          {time: '17:43', label: '合奏開始'},
+          {time: '19:07', label: 'チューニング'},
+          {time: '21:28', label: '基礎合奏', contents: [
+            {time: '22:27', label: 'コラール1'},
+            {time: '22:47', label: 'コラール1'}
+          ]},
+          {time: '23:24', label: 'スラヴ舞曲 Op.46-8', contents: [
+            {time: '59:06', label: '通し'}
+          ]},
+          {time: '1:07:09', label: 'スラヴ舞曲 Op.46-2', contents: [
+            {time: '1:08:09', label: '通し'}
+          ]},
+          {time: '1:44:11', label: '休憩'},
+          {time: '1:52:32', label: 'スラヴ舞曲 Op.72-2', contents: [
+            {time: '1:52:56', label: '通し'},
+            {time: '2:25:32', label: '通し'}
+          ]},
+          {time: '2:31:09', label: '五月の風', contents: [
+            {time: '2:33:55', label: '通し'}
+          ]},
+          {time: '2:53:59', label: '祝典のための音楽', contents: [
+            {time: '2:55:23', label: '第2楽章'},
+          ]},
+          {time: '3:08:59', label: '連絡'}
+        ]
+      }
+    ]
+  },
   // {
   //   // 日付などユニークなもの
   //   id: '20190316',
