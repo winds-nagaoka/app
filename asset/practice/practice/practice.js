@@ -330,6 +330,17 @@ const practiceList = [
     place: ['第5スタジオ'],
     label: '河本先生'
   },
+  {
+    id: '20191012',
+    recordStatus: true,
+    time: {
+      timestamp: 1570856400,
+      date: '2019年10月12日(土)',
+      time: '14:00'
+    },
+    place: ['コンサートホール'],
+    label: '河本先生'
+  },
 ]
 
 module.exports = {
