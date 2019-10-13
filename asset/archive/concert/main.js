@@ -1037,6 +1037,53 @@ const mainConcert = [
     //   {title: '狂詩曲「ノヴェナ」', composer: 'J.スウェアリンジェン'},
     //   {title: 'ブロックM', composer: 'J.H.ビリック'}
     // ]
+  }, {
+//////////////////////////////////
+////// 第32回定期演奏会データ //////
+//////////////////////////////////
+    id: 'main032',
+    type: 'main',
+    title: '第32回定期演奏会',
+    time: {
+      timestamp: 1570942800,
+      date: '2019年10月13日(日)',
+      time: '14:00',
+      label: '開演',
+    },
+    place: ['長岡リリックホール', 'コンサートホール'],
+    conductor: [{name: '河本隆吉'}],
+    poster: 'https://winds-n.com/img/poster/main/32nd.jpg',
+    guide: 'https://winds-n.com/32ndconcert',
+    contents: [
+      {label: 'ロビコン', music: [0]},
+      {label: 'プレコン', music: [1]},
+      {label: '第1部', music: [2, 3, 4]},
+      {label: '第2部', music: [5, 6]},
+      {label: 'アンコール', music: [7, 8]},
+    ],
+    data: [
+      {title: '組曲「水上の音楽」より', composer: 'G.ヘンデル', movement: ['第1楽章', '第3楽章']},
+      {title: 'ブエノスアイレスの春', composer: 'A.ピアソラ'},
+      {title: '五月の風', composer: '真島俊夫'},
+      {title: '詩的間奏曲', composer: 'J.バーンズ'},
+      {title: '祝典のための音楽', composer: 'P.スパーク', movement: ['第1楽章 con brio', '第2楽章 andantino', '第3楽章 vivo']},
+      {title: '「スラヴ舞曲」より', composer: 'A.ドヴォルザーク', arranger: '河本隆吉', movement: ['作品46 第2番', '作品72 第2番', '作品46 第8番']},
+      {title: '富士山～北斎の版画に触発されて～', composer: '真島俊夫'},
+      {title: '「あんたがたどこさ」の主題による幻想曲', composer: '林大地'},
+      {title: 'ブロックM', composer: 'J.H.ビリック'}
+    ]
+    // data: [
+    //   {title: 'スリー・ラテン・ダンス', composer: 'P.ヒケティック', movement: ['1. Charanga di Xiomara Reyes', '2. Merengue Sempre di Aychem Sunal', '3. Dansa Latino di Maria del Real']},
+    //   {title: '三日月の舞', composer: '松田彬人'},
+    //   {title: '大草原の歌', composer: 'R.ミッチェル'},
+    //   {title: '喜びの音楽を奏でて！', composer: 'J.スウェアリンジェン'},
+    //   {title: 'ウィズ・ハート・アンド・ヴォイス', composer: 'D.ギリングハム'},
+    //   {title: 'アルセナール', composer: 'J.ヴァンデルロースト'},
+    //   {title: 'メキシコの祭り', composer: 'H.O.リード', movement: ['第1楽章 プレリュードとアズテック・ダンス', '第2楽章 ミサ', '第3楽章 カーニヴァル']},
+    //   {title: 'マーチ「潮煙」', composer: '上岡洋一'},
+    //   {title: '狂詩曲「ノヴェナ」', composer: 'J.スウェアリンジェン'},
+    //   {title: 'ブロックM', composer: 'J.H.ビリック'}
+    // ]
   }
 ]
 
