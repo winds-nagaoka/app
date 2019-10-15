@@ -1456,6 +1456,21 @@ const practiceAudio = [
       }
     ]
   },
+  {
+    id: '20191013',
+    directory: '20191013/',
+    file: [
+      {label: 'ファイル1', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          // {time: '00:00', label: '録音開始'}
+        ]
+      }
+    ]
+  },
   // {
   //   // 日付などユニークなもの
   //   id: '20190316',
