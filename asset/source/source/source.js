@@ -38,7 +38,7 @@ const sourceList = [
       date: '2019年10月13日(日)',
       time: '14:00'
     },
-    sourceStatus: true,
+    sourceStatus: false,
     contents: [
       {label: '第1部', music: [0, 1, 2]},
       {label: '第2部', music: [3, 4]},
