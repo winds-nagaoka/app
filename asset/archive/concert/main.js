@@ -1025,18 +1025,6 @@ const mainConcert = [
       {audio: 12, title: '狂詩曲「ノヴェナ」', composer: 'J.スウェアリンジェン'},
       {audio: 13, title: 'ブロックM', composer: 'J.H.ビリック'}
     ]
-    // data: [
-    //   {title: 'スリー・ラテン・ダンス', composer: 'P.ヒケティック', movement: ['1. Charanga di Xiomara Reyes', '2. Merengue Sempre di Aychem Sunal', '3. Dansa Latino di Maria del Real']},
-    //   {title: '三日月の舞', composer: '松田彬人'},
-    //   {title: '大草原の歌', composer: 'R.ミッチェル'},
-    //   {title: '喜びの音楽を奏でて！', composer: 'J.スウェアリンジェン'},
-    //   {title: 'ウィズ・ハート・アンド・ヴォイス', composer: 'D.ギリングハム'},
-    //   {title: 'アルセナール', composer: 'J.ヴァンデルロースト'},
-    //   {title: 'メキシコの祭り', composer: 'H.O.リード', movement: ['第1楽章 プレリュードとアズテック・ダンス', '第2楽章 ミサ', '第3楽章 カーニヴァル']},
-    //   {title: 'マーチ「潮煙」', composer: '上岡洋一'},
-    //   {title: '狂詩曲「ノヴェナ」', composer: 'J.スウェアリンジェン'},
-    //   {title: 'ブロックM', composer: 'J.H.ビリック'}
-    // ]
   }, {
 //////////////////////////////////
 ////// 第32回定期演奏会データ //////
@@ -1072,18 +1060,6 @@ const mainConcert = [
       {title: '「あんたがたどこさ」の主題による幻想曲', composer: '林大地'},
       {title: 'ブロックM', composer: 'J.H.ビリック'}
     ]
-    // data: [
-    //   {title: 'スリー・ラテン・ダンス', composer: 'P.ヒケティック', movement: ['1. Charanga di Xiomara Reyes', '2. Merengue Sempre di Aychem Sunal', '3. Dansa Latino di Maria del Real']},
-    //   {title: '三日月の舞', composer: '松田彬人'},
-    //   {title: '大草原の歌', composer: 'R.ミッチェル'},
-    //   {title: '喜びの音楽を奏でて！', composer: 'J.スウェアリンジェン'},
-    //   {title: 'ウィズ・ハート・アンド・ヴォイス', composer: 'D.ギリングハム'},
-    //   {title: 'アルセナール', composer: 'J.ヴァンデルロースト'},
-    //   {title: 'メキシコの祭り', composer: 'H.O.リード', movement: ['第1楽章 プレリュードとアズテック・ダンス', '第2楽章 ミサ', '第3楽章 カーニヴァル']},
-    //   {title: 'マーチ「潮煙」', composer: '上岡洋一'},
-    //   {title: '狂詩曲「ノヴェナ」', composer: 'J.スウェアリンジェン'},
-    //   {title: 'ブロックM', composer: 'J.H.ビリック'}
-    // ]
   }
 ]
 
