@@ -2,9 +2,9 @@
 
 This is The Wind Ensemble's data storage which contains concert history, practice, etc...
 
-## Environment
+## Environment and install
 
-Express(Node.js) and NeDB
+[Express](https://expressjs.com/)(Node.js) and [NeDB](https://github.com/louischatriot/nedb).
 
 Install dependencies.
 
@@ -36,8 +36,6 @@ node app.js
 Running web server at port 3007.
 
 ## Update databse
-
-This project using [NeDB](https://github.com/louischatriot/nedb).
 
 First, update data.
 Refer to existing data for data 
