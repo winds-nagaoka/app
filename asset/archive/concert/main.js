@@ -713,7 +713,7 @@ const mainConcert = [
       {audio: 4, video: 4, title: '「魔女の宅急便」セレクション', composer: '久石譲', arranger: '森田一浩', add: ['《海の見える街～仕事はじめ～傷心のキキ～突風～旅立ち》']},
       {audio: 5, video: 5, title: '星の船', composer: '西邑由記子'},
       {audio: 6, video: 6, title: 'リバーダンス', composer: 'B.ウィーラン', arranger: 'C.ストロンメン', movement: ['I. 太陽を巡るリール', 'II. 心の叫び', 'III. 落雷', 'IV. リバーダンス・ファイナル']},
-      {audio: 7, video: 7, title: '世俗カンタータ「カルミナ・ブラーナ」', composer: 'C.オルフ', arranger: 'J.クランス', movement: ['I. おお､運命の女神よ', 'II. 運命に傷つけられ', 'III. それ､ごらん!', 'IV. 踊り', 'V. 森は光り輝き', 'VI. たとえこの世界がみな', 'VII. 愛の神のそこかしこ…', 'VIII. 我は大修道院長様', 'IX. 酒場にいるときは', 'X. 天秤に心をかけて', 'XI. いとしの貴方', 'XII. アヴェ､最高に優美な女よ', 'XIII. おお､運命の女神よ']},
+      {audio: 7, video: 7, title: '世俗カンタータ「カルミナ・ブラーナ」', composer: 'C.オルフ', arranger: 'J.クランス', movement: ['I. おお、運命の女神よ', 'II. 運命に傷つけられ', 'III. それ、ごらん!', 'IV. 踊り', 'V. 森は光り輝き', 'VI. たとえこの世界がみな', 'VII. 愛の神のそこかしこ…', 'VIII. 我は大修道院長様', 'IX. 酒場にいるときは', 'X. 天秤に心をかけて', 'XI. いとしの貴方', 'XII. アヴェ、最高に優美な女よ', 'XIII. おお、運命の女神よ']},
       {audio: 8, video: 8, title: 'NHK大河ドラマ「天地人」オープニングテーマ', composer: '大島ミチル'},
       {audio: 9, video: 9, title: 'ブロックM', composer: 'J.H.ビリック'},
     ]
