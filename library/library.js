@@ -1,8 +1,7 @@
 const request = require('superagent')
 
 function authAPI (send, callback) {
-  request.post('http://192.168.1.22:3003/auth').type('form').send(send)
-  // request.post('https://auth.winds-n.com/auth').type('form').send(send)
+  request.post('https://auth.winds-n.com/auth').type('form').send(send)
   .end((error, response) => {
     if (error) return callback(false)
     if (response.body.status) {
