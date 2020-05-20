@@ -9,22 +9,16 @@ This is The Wind Ensemble's data storage which contains concert history, practic
 Install dependencies.
 
 ```
-npm i
+npm install
 ```
 
 ## Create database
 
-Run `/asset/all.h` to create database.
+Run `script.h` to create database.
 
 ```
-# cd asset
-# ./all.h
-```
-
-Run `/asset/copy.h` to copy database for deploy.
-
-```
-# ./copy.h
+# chmod +x script.h
+# ./script.h
 ```
 
 ## Run server
@@ -41,8 +35,8 @@ First, update data.
 Refer to existing data for data 
 Data configration.
 
-- `/asset/archive/concert`: Concert data
-- `/asset/practice/practice`: Practice history
-- `/asset/source/source`: Reference source data
+- `/asset/concert`: Concert data
+- `/asset/practice`: Practice history
+- `/asset/source`: Reference source data
 
 After, create databases.
