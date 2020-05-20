@@ -1,4 +1,3 @@
-// http://misakikato.xyz/winds/practice/20190316/001.mp3
 const practiceList = [
   {
     id: '20190316',

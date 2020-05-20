@@ -187,124 +187,9 @@ const practiceAudio = [
     id: '20190406',
     directory: '20190406/',
     file: [
-      {label: 'ファイル1', path: '001.mp3'},
-      // {label: 'ファイル2', path: '002.mp3'},
-      // {label: 'ファイル3', path: '003.mp3'}
+      {label: 'ファイル1', path: '001.mp3'}
     ],
     contents: [
-      // {
-      //   file: 0,
-      //   list: [
-      //     {time: '03:04', label: '合奏開始'},
-      //     {time: '05:05', label: '基礎合奏', contents: [
-      //       {time: '06:20', label: 'バランストレーニング'},
-      //       {time: '09:29', label: 'バランストレーニング'},
-      //       {time: '13:25', label: 'トレーニング9 ABCDトレーニング'},
-      //       {time: '15:14', label: 'トレーニング9 ABCDトレーニング'}
-      //     ]},
-      //     {time: '16:18', label: 'ディズニーランドセレブレーション', contents: [
-      //       {time: '18:06', label: '最初から'},
-      //       {time: '20:57', label: '最初から'},
-      //       {time: '21:48', label: '最初から'},
-      //       {time: '22:37', label: '[16]から四分音符の動きのみ'},
-      //       {time: '22:51', label: '[16]から四分音符の動きのみ'},
-      //       {time: '23:00', label: '[16]から四分音符の動きのみ 木管のみ'},
-      //       {time: '23:14', label: '[16]から四分音符の動きのみ 木管のみ'},
-      //       {time: '23:33', label: '[16]から四分音符の動きのみ 金管のみ'},
-      //       {time: '23:44', label: '[16]から四分音符の動きのみ 金管のみ'},
-      //       {time: '23:56', label: '[16]から四分音符の動きのみ 金管のみ'},
-      //       {time: '24:13', label: '[16]から四分音符の動きのみ 金管のみ'},
-      //       {time: '24:20', label: '[16]から四分音符の動きのみ'},
-      //       {time: '24:36', label: '[13]から'},
-      //       {time: '25:36', label: '[13]から'},
-      //       {time: '26:55', label: '[13]から'},
-      //       {time: '28:57', label: '[41]から'},
-      //       {time: '33:22', label: '[64]から'},
-      //       {time: '33:58', label: '[64]から'},
-      //       {time: '35:45', label: '[100]から'},
-      //       {time: '37:34', label: '[128]から'},
-      //       {time: '37:59', label: '[128]から'},
-      //       {time: '38:23', label: '[128]から'},
-      //       {time: '38:48', label: '[128]から'},
-      //       {time: '39:41', label: '[128]から'}
-      //     ]},
-      //     {time: '41:35', label: 'Can You Celebrate?', contents: [
-      //       {time: '43:29', label: '[F]から'},
-      //       {time: '45:16', label: '通し'},
-      //       {time: '51:00', label: '最初から'},
-      //       {time: '51:20', label: '最初から'},
-      //       {time: '52:30', label: '[A]から'},
-      //       {time: '53:22', label: '[A]から'},
-      //       {time: '54:49', label: '[A]から'},
-      //       {time: '57:19', label: '[C]から'},
-      //       {time: '59:03', label: '[D]から'},
-      //       {time: '59:54', label: '[D]から'},
-      //     ]}
-      //   ]
-      // },
-      // {
-      //   file: 1,
-      //   list: [
-      //     {time: '00:00', label: 'Can You Celebrate?', contents: [
-      //       {time: '01:51', label: '[D]から'},
-      //       {time: '03:49', label: 'No shuffle から'},
-      //       {time: '05:49', label: 'No shuffle から'}
-      //     ]},
-      //     {time: '07:47', label: 'ジャパグラ12', contents: [
-      //       {time: '11:13', label: '[Q]から'},
-      //       {time: '12:00', label: '[Q]から'},
-      //       {time: '14:30', label: '[O]から'},
-      //       {time: '17:13', label: '最初から'},
-      //       {time: '18:47', label: '[A]から'},
-      //       {time: '21:59', label: '[F]から'}
-      //     ]},
-      //     {time: '25:59', label: '休憩'},
-      //     {time: '36:02', label: 'オーメンズ・オブ・ラブ', contents: [
-      //       {time: '41:31', label: '最初から'},
-      //       {time: '43:59', label: '[D]から'},
-      //       {time: '45:03', label: '[D]から'},
-      //       {time: '46:18', label: '最初から'},
-      //       {time: '49:26', label: '[H]から'}
-      //     ]},
-      //     {time: '49:52', label: '富士山', contents: [
-      //       {time: '52:32', label: '最初から'},
-      //       {time: '54:24', label: '[16]から'},
-      //       {time: '55:38', label: '[16]から 金管のみ'},
-      //       {time: '55:57', label: '[16]から 金管のみ'},
-      //       {time: '56:17', label: '[16]から 金管のみ'},
-      //       {time: '56:39', label: '[16]から 金管打楽器のみ'},
-      //       {time: '57:10', label: '[16]から 金管打楽器のみ'},
-      //       {time: '57:35', label: '[16]から 金管打楽器のみ'},
-      //       {time: '57:51', label: '[16]から 木管のみ'},
-      //       {time: '58:26', label: '[16]から 木管のみ'},
-      //       {time: '58:54', label: '[16]から'},
-      //       {time: '59:22', label: '[16]から'},
-      //       {time: '59:43', label: '最初から'}
-      //     ]},
-      //   ]
-      // },
-      // {
-      //   file: 2,
-      //   list: [
-      //     {time: '00:00', label: '富士山', contents: [
-      //       {time: '02:12', label: '[16]から'},
-      //       {time: '04:03', label: '[31]から'}
-      //     ]},
-      //     {time: '04:50', label: 'ど演歌えきすぷれす', contents: [
-      //       {time: '07:38', label: '[132]から'},
-      //       {time: '08:19', label: '[132]から'},
-      //       {time: '09:35', label: '[114]アウフタクトから'},
-      //       {time: '10:07', label: '[60]から'},
-      //       {time: '15:34', label: '[114]アウフタクトから'},
-      //       {time: '20:20', label: '[20]から'},
-      //       {time: '22:03', label: '[43]から'},
-      //       {time: '22:16', label: '[43]から'},
-      //       {time: '23:18', label: '最初から'},
-      //       {time: '26:56', label: '[43]から'}
-      //     ]},
-      //     {time: '30:34', label: '連絡'}
-      //   ]
-      // }
       {
         file: 0,
         list: [
@@ -1450,9 +1335,7 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: [
-          // {time: '00:00', label: '録音開始'}
-        ]
+        list: []
       }
     ]
   },
@@ -1465,9 +1348,7 @@ const practiceAudio = [
     contents: [
       {
         file: 0,
-        list: [
-          // {time: '00:00', label: '録音開始'}
-        ]
+        list: []
       }
     ]
   },
