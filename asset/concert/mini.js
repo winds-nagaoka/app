@@ -105,7 +105,7 @@ const miniConcert = [
     },
     place: ['千秋が原ふるさとの森', '野外音楽堂'],
     conductor: [{name: '宮口弘明'}],
-    poster: 'https://winds-n.com/img/poster/mini/2010.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2010.jpg',
     contents: [
       {label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8]}
     ],
@@ -133,7 +133,7 @@ const miniConcert = [
     },
     place: ['千秋が原ふるさとの森', '野外音楽堂'],
     conductor: [{name: '関矢忠志'}],
-    poster: 'https://winds-n.com/img/poster/mini/2011.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2011.jpg',
     contents: [
       {label: 'JCKサクソフォンアンサンブル', music: [0, 1, 2]},
       {label: 'クラリネットアンサンブル', music: [3, 4]},
@@ -170,7 +170,7 @@ const miniConcert = [
     },
     place: ['千秋が原ふるさとの森', '野外音楽堂'],
     conductor: [{name: '宮口弘明'}],
-    poster: 'https://winds-n.com/img/poster/mini/2012.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2012.jpg',
     contents: [
       {label: 'プレコン', music: [0, 1]},
       {label: 'プログラム', music: [2, 3, 4, 5, 6, 7, 8, 9, 10]},
@@ -203,7 +203,7 @@ const miniConcert = [
     },
     place: ['千秋が原ふるさとの森', '野外音楽堂'],
     conductor: [{name: '宮口弘明'}],
-    poster: 'https://winds-n.com/img/poster/mini/2013.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2013.jpg',
     contents: [
       {label: 'プレコン', music: [0]},
       {label: 'プログラム', music: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]},
@@ -236,7 +236,7 @@ const miniConcert = [
     },
     place: ['千秋が原ふるさとの森', '野外音楽堂'],
     conductor: [{name: '植村昇'}],
-    poster: 'https://winds-n.com/img/poster/mini/2014.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2014.jpg',
     contents: [
       {label: 'プレコン', music: [0]},
       {label: 'プログラム', music: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]},
@@ -270,7 +270,7 @@ const miniConcert = [
     },
     place: ['長岡リリックホール', 'ポケットステージ'],
     conductor: [{name: '植村昇'}],
-    poster: 'https://winds-n.com/img/poster/mini/2015.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2015.jpg',
     contents: [
       {label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]},
       {label: 'アンコール', music: [11]}
@@ -302,7 +302,7 @@ const miniConcert = [
     },
     place: ['長岡リリックホール', 'ポケットステージ'],
     conductor: [{name: '植村昇'}],
-    poster: 'https://winds-n.com/img/poster/mini/2016.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2016.jpg',
     contents: [
       {label: 'プレコン', music: [0]},
       {label: 'プログラム', music: [1, 2, 3, 4, 5, 6, 7, 8]},
@@ -333,7 +333,7 @@ const miniConcert = [
     },
     place: ['長岡リリックホール', '第一スタジオ'],
     conductor: [{name: '今井優太'}],
-    poster: 'https://winds-n.com/img/poster/mini/2017.png',
+    poster: 'https://winds-n.com/image/poster/mini/2017.png',
     guide: 'https://winds-n.com/mini2017',
     contents: [
       {label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8]},
@@ -365,7 +365,7 @@ const miniConcert = [
     },
     place: ['長岡リリックホール', '第一スタジオ'],
     conductor: [{name: '今井優太'}],
-    poster: 'https://winds-n.com/img/poster/mini/2018.png',
+    poster: 'https://winds-n.com/image/poster/mini/2018.png',
     guide: 'https://winds-n.com/mini2018',
     contents: [
       {label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8]},
@@ -397,7 +397,7 @@ const miniConcert = [
     },
     place: ['長岡リリックホール', 'ポケットステージ'],
     conductor: [{name: '今井優太'}],
-    poster: 'https://winds-n.com/img/poster/mini/2019.png',
+    poster: 'https://winds-n.com/image/poster/mini/2019.png',
     guide: 'https://winds-n.com/mini2019',
     contents: [
       {label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8]},

@@ -53,7 +53,7 @@ const otherConcert = [
     },
     place: ['長岡リリックホール', 'コンサートホール'],
     conductor: [{name: '河本隆吉'}],
-    poster: 'https://winds-n.com/img/poster/other/2020.jpg',
+    poster: 'https://winds-n.com/image/poster/other/2020.jpg',
     guide: 'https://winds-n.com/spring2020',
     contents: [
       {label: '第1部', music: [0, 1, 2]},
