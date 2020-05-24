@@ -46,7 +46,7 @@ const otherConcert = [
     type: 'other',
     title: 'スプリングコンサート',
     time: {
-      timestamp: 1570942800,
+      timestamp: 1589007600,
       date: '2020年5月9日(土)',
       time: '16:00',
       label: '開演',
