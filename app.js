@@ -36,6 +36,9 @@ const record = require('./library/record')
 const source = require('./library/source')
 const reference = require('./library/reference')
 
+// winds-nagaoka/secrets
+const secrets = require('../secrets')
+
 // ルートアクセス
 app.get('/', (req, res) => {
   console.log('[' + lib.showTime() + '] root access')
@@ -179,6 +182,18 @@ app.post('/api/path', (req, res) => {
   const path = req.body.path
   console.log('[' + lib.showTime() + '] api/path: ' + session.userid + ', version: ' + session.version + ', ' + path)
   return res.json({})
+})
+
+app.post('/api/bbs', (req, res) => {
+  const session = req.body.session
+  console.log('[' + lib.showTime() + '] /api/bbs: ' + session.userid + ', (token), version: ' + session.version)
+  lib.authAPI({session}, (authResult) => {
+    if (authResult) {
+      return res.json({status: true, api: secrets.bbs.apiPass})
+    } else {
+      return res.json({status: false})
+    }
+  })
 })
 
 app.listen(3007)
