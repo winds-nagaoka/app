@@ -404,17 +404,17 @@ const miniConcert = [
       {label: 'アンコール', music: [9, 10]}
     ],
     data: [
-      {audio: 0, title: 'ディズニーセレブレーション'},
-      {audio: 1, title: '私のお気に入り', composer: '熱帯JAZZ楽団'},
-      {audio: 2, title: 'おどるポンポコリン'},
-      {audio: 3, title: '男の勲章'},
-      {audio: 4, title: 'Can You Celebrate?', composer: '安室奈美恵'},
-      {audio: 5, title: '恋するフォーチュンクッキー'},
-      {audio: 6, title: 'U.S.A.'},
-      {audio: 7, title: 'ど演歌えきすぷれす'},
-      {audio: 8, title: 'ジャパニーズ・グラフィティXII'},
-      {audio: 9, title: 'オーメンズ・オブ・ラブ'},
-      {audio: 10, title: 'アイデア', composer: '星野源'}
+      {audio: 0, video: 0, title: 'ディズニーセレブレーション'},
+      {audio: 1, video: 1, title: '私のお気に入り', composer: '熱帯JAZZ楽団'},
+      {audio: 2, video: 2, title: 'おどるポンポコリン'},
+      {audio: 3, video: 3, title: '男の勲章'},
+      {audio: 4, video: 4, title: 'Can You Celebrate?', composer: '安室奈美恵'},
+      {audio: 5, video: 5, title: '恋するフォーチュンクッキー'},
+      {audio: 6, video: 6, title: 'U.S.A.'},
+      {audio: 7, video: 7, title: 'ど演歌えきすぷれす'},
+      {audio: 8, video: 8, title: 'ジャパニーズ・グラフィティXII'},
+      {audio: 9, video: 9, title: 'オーメンズ・オブ・ラブ'},
+      {audio: 10, video: 10, title: 'アイデア', composer: '星野源'}
     ]
   }
 ]
