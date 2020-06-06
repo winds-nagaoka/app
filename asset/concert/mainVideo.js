@@ -551,6 +551,26 @@ const mainConcert = [
       {available: true, data: 9, path: '010.mp4'},
       {available: true, data: 10, path: '011.mp4'}
     ]
+  }, {
+    id: 'main031',
+    status: true,
+    baseSrc: '31st/',
+    data: [
+      {available: true, data: 0, path: '001.mp4', addtitle: '1. Charanga di Xiomara Reyes'},
+      {available: true, data: 0, path: '002.mp4', addtitle: '2. Merengue Sempre di Aychem Sunal'},
+      {available: true, data: 0, path: '003.mp4', addtitle: '3. Dansa Latino di Maria del Real'},
+      {available: true, data: 1, path: '004.mp4'},
+      {available: true, data: 2, path: '005.mp4'},
+      {available: true, data: 3, path: '006.mp4'},
+      {available: true, data: 4, path: '007.mp4'},
+      {available: true, data: 5, path: '008.mp4'},
+      {available: true, data: 6, path: '009.mp4', addtitle: '第1楽章 プレリュードとアズテック・ダンス'},
+      {available: true, data: 6, path: '010.mp4', addtitle: '第2楽章 ミサ'},
+      {available: true, data: 6, path: '011.mp4', addtitle: '第3楽章 カーニヴァル'},
+      {available: true, data: 7, path: '012.mp4'},
+      {available: true, data: 8, path: '013.mp4'},
+      {available: true, data: 9, path: '014.mp4'}
+    ]
   }
 ]
 

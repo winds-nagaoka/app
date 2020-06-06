@@ -1014,16 +1014,16 @@ const mainConcert = [
       {label: 'アンコール', music: [7, 8, 9]},
     ],
     data: [
-      {audio: 0, title: 'スリー・ラテン・ダンス', composer: 'P.ヒケティック', movement: ['1. Charanga di Xiomara Reyes', '2. Merengue Sempre di Aychem Sunal', '3. Dansa Latino di Maria del Real']},
-      {audio: 3, title: '三日月の舞', composer: '松田彬人'},
-      {audio: 4, title: '大草原の歌', composer: 'R.ミッチェル'},
-      {audio: 5, title: '喜びの音楽を奏でて！', composer: 'J.スウェアリンジェン'},
-      {audio: 6, title: 'ウィズ・ハート・アンド・ヴォイス', composer: 'D.ギリングハム'},
-      {audio: 7, title: 'アルセナール', composer: 'J.ヴァンデルロースト'},
-      {audio: 8, title: 'メキシコの祭り', composer: 'H.O.リード', movement: ['第1楽章 プレリュードとアズテック・ダンス', '第2楽章 ミサ', '第3楽章 カーニヴァル']},
-      {audio: 11, title: 'マーチ「潮煙」', composer: '上岡洋一'},
-      {audio: 12, title: '狂詩曲「ノヴェナ」', composer: 'J.スウェアリンジェン'},
-      {audio: 13, title: 'ブロックM', composer: 'J.H.ビリック'}
+      {audio: 0, video: 0, title: 'スリー・ラテン・ダンス', composer: 'P.ヒケティック', movement: ['1. Charanga di Xiomara Reyes', '2. Merengue Sempre di Aychem Sunal', '3. Dansa Latino di Maria del Real']},
+      {audio: 3, video: 3, title: '三日月の舞', composer: '松田彬人'},
+      {audio: 4, video: 4, title: '大草原の歌', composer: 'R.ミッチェル'},
+      {audio: 5, video: 5, title: '喜びの音楽を奏でて！', composer: 'J.スウェアリンジェン'},
+      {audio: 6, video: 6, title: 'ウィズ・ハート・アンド・ヴォイス', composer: 'D.ギリングハム'},
+      {audio: 7, video: 7, title: 'アルセナール', composer: 'J.ヴァンデルロースト'},
+      {audio: 8, video: 8, title: 'メキシコの祭り', composer: 'H.O.リード', movement: ['第1楽章 プレリュードとアズテック・ダンス', '第2楽章 ミサ', '第3楽章 カーニヴァル']},
+      {audio: 11, video: 11, title: 'マーチ「潮煙」', composer: '上岡洋一'},
+      {audio: 12, video: 12, title: '狂詩曲「ノヴェナ」', composer: 'J.スウェアリンジェン'},
+      {audio: 13, video: 13, title: 'ブロックM', composer: 'J.H.ビリック'}
     ]
   }, {
 //////////////////////////////////
