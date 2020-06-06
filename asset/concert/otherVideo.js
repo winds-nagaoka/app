@@ -25,7 +25,15 @@ const otherConcert = [
     data: [
       {available: true, data: 0, path: '001.mp4'}
     ]
-  }, 
+  }, {
+    id: 'flashmob2019',
+    status: true,
+    baseSrc: 'flashmob2019/',
+    poster: 'https://video.winds-n.com/poster_854.png',
+    data: [
+      {available: true, data: 0, path: '001.mp4'}
+    ]
+  }
 ]
 
 module.exports = {
