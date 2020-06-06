@@ -372,17 +372,17 @@ const miniConcert = [
       {label: 'アンコール', music: [9, 10]}
     ],
     data: [
-      {audio: 0, title: 'セレブレイション', composer: 'R.E.ベル他', arranger: '森村献'},
-      {audio: 1, title: 'ダンシング・ヒーロー', composer: '荻野目洋子'},
-      {audio: 2, title: 'ひまわりの約束', composer: '秦基博', arranger: '西條太貴'},
-      {audio: 3, title: 'ムーンライト伝説', composer: '小諸鉄也', arranger: '小島里美'},
-      {audio: 4, title: 'やさしさに包まれたなら', composer: '荒井由実', arranger: '高橋宏樹'},
-      {audio: 5, title: 'ジャパニーズ・グラフィティXIX ドリフ', arranger: '星出尚志'},
-      {audio: 6, title: '若い広場', composer: '桑田佳祐', arranger: '郷間幹男'},
-      {audio: 7, title: 'オブラディ オブラダ', composer: 'J.レノン & P.マッカートニー', arranger: '岩井直溥'},
-      {audio: 8, title: '塔の上のラプンツェル・メドレー', composer: 'A.メンケン', arranger: '星出尚志'},
-      {audio: 9, title: '名探偵コナン メインテーマ(Ver.2)', composer: '大野克夫', arranger: '宮川成治'},
-      {audio: 10, title: 'ドラえもん', composer: '星野源'}
+      {audio: 0, video: 0, title: 'セレブレイション', composer: 'R.E.ベル他', arranger: '森村献'},
+      {audio: 1, video: 1, title: 'ダンシング・ヒーロー', composer: '荻野目洋子'},
+      {audio: 2, video: 2, title: 'ひまわりの約束', composer: '秦基博', arranger: '西條太貴'},
+      {audio: 3, video: 3, title: 'ムーンライト伝説', composer: '小諸鉄也', arranger: '小島里美'},
+      {audio: 4, video: 4, title: 'やさしさに包まれたなら', composer: '荒井由実', arranger: '高橋宏樹'},
+      {audio: 5, video: 5, title: 'ジャパニーズ・グラフィティXIX ドリフ', arranger: '星出尚志'},
+      {audio: 6, video: 6, title: '若い広場', composer: '桑田佳祐', arranger: '郷間幹男'},
+      {audio: 7, video: 7, title: 'オブラディ オブラダ', composer: 'J.レノン & P.マッカートニー', arranger: '岩井直溥'},
+      {audio: 8, video: 8, title: '塔の上のラプンツェル・メドレー', composer: 'A.メンケン', arranger: '星出尚志'},
+      {audio: 9, video: 9, title: '名探偵コナン メインテーマ(Ver.2)', composer: '大野克夫', arranger: '宮川成治'},
+      {audio: 10, video: 10, title: 'ドラえもん', composer: '星野源'}
     ]
   }, {
 ////////////////////////////////////
