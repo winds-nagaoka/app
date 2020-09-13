@@ -8,7 +8,7 @@ const sourceList = [
       date: '2020年10月11日(日)',
       time: '14:00'
     },
-    sourceStatus: false,
+    sourceStatus: true,
     contents: [
       {label: '第1部', music: [0, 1, 2]},
       {label: 'アンコール', music: [3, 4]},
