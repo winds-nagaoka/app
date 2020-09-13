@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 })
 
 const urlPracticeBase = 'https://misakikato.xyz/winds/practice/'
-const urlSourceBase = 'https://winds-n.com/member/contents/audio/'
+const urlSourceBase = 'https://misakikato.xyz/winds/source/'
 const urlAudioBase = 'https://misakikato.xyz/winds/archive/audio/'
 const urlVideoBase = 'https://misakikato.xyz/winds/archive/video/'
 const urlPhotoBase = 'https://misakikato.xyz/winds/archive/photo/'
