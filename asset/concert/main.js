@@ -1060,6 +1060,34 @@ const mainConcert = [
       {title: '「あんたがたどこさ」の主題による幻想曲', composer: '林大地'},
       {title: 'ブロックM', composer: 'J.H.ビリック'}
     ]
+  }, {
+//////////////////////////////////
+////// 第33回定期演奏会データ //////
+//////////////////////////////////
+    id: 'main033',
+    type: 'main',
+    title: '第33回定期演奏会',
+    time: {
+      timestamp: 1602392400,
+      date: '2020年10月11日(日)',
+      time: '14:00',
+      label: '開演',
+    },
+    place: ['長岡リリックホール', 'コンサートホール'],
+    conductor: [{name: '河本隆吉'}],
+    poster: 'https://winds-n.com/image/poster/main/33rd.jpg',
+    guide: 'https://winds-n.com/33rdconcert',
+    contents: [
+      {label: '第1部', music: [0, 1, 2]},
+      {label: 'アンコール', music: [3, 4]},
+    ],
+    data: [
+      {title: '五月の風', composer: '真島俊夫'},
+      {title: '詩的間奏曲', composer: 'J.バーンズ'},
+      {title: '「スラヴ舞曲」より', composer: 'A.ドヴォルザーク', arranger: '河本隆吉', movement: ['作品46 第2番', '作品72 第2番', '作品46 第8番']},
+      {title: 'ロマネスク', composer: 'J.スウェアリンジェン'},
+      {title: 'ブロックM', composer: 'J.H.ビリック'}
+    ]
   }
 ]
 
