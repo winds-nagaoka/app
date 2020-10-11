@@ -1082,11 +1082,11 @@ const mainConcert = [
       {label: 'アンコール', music: [3, 4]},
     ],
     data: [
-      {title: '五月の風', composer: '真島俊夫'},
-      {title: '詩的間奏曲', composer: 'J.バーンズ'},
-      {title: '「スラヴ舞曲」より', composer: 'A.ドヴォルザーク', arranger: '河本隆吉', movement: ['作品46 第2番', '作品72 第2番', '作品46 第8番']},
-      {title: 'ロマネスク', composer: 'J.スウェアリンジェン'},
-      {title: 'ブロックM', composer: 'J.H.ビリック'}
+      {audio: 0, title: '五月の風', composer: '真島俊夫'},
+      {audio: 1, title: '詩的間奏曲', composer: 'J.バーンズ'},
+      {audio: 2, title: '「スラヴ舞曲」より', composer: 'A.ドヴォルザーク', arranger: '河本隆吉', movement: ['作品46 第2番', '作品72 第2番', '作品46 第8番']},
+      {audio: 5, title: 'ロマネスク', composer: 'J.スウェアリンジェン'},
+      {audio: 6, title: 'ブロックM', composer: 'J.H.ビリック'}
     ]
   }
 ]
