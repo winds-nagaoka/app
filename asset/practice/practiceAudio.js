@@ -46,6 +46,37 @@ const practiceAudio = [
       },
     ]
   },
+  {
+    id: '20210410',
+    directory: '20210410/',
+    file: [
+      {label: '録音開始', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          {time: '23:45', label: '合奏開始'},
+          {time: '27:46', label: '基礎合奏'},
+          {time: '34:53', label: 'Make you happy', contents: [
+            {time: '38:10', label: '通し'}
+          ]},
+          {time: '1:01:56', label: '夜に駆ける', contents: [
+            {time: '1:03:46', label: '通し'}
+          ]},
+          {time: '1:22:06', label: '虹', contents: [
+            {time: '1:23:06', label: '通し'}
+          ]},
+          {time: '1:40:06', label: 'コンパス・オブ・ユア・ハート', contents: [
+            {time: '2:10:38', label: '通し'}
+          ]},
+          {time: '2:15:16', label: 'ディズニーヴィランズ・メドレー', contents: [
+            {time: '2:49:38', label: '通し'}
+          ]},
+        ]
+      },
+    ]
+  },
 ]
 
 module.exports = {
