@@ -131,6 +131,28 @@ const practiceAudio = [
       },
     ]
   },
+  {
+    id: '20210501',
+    directory: '20210501/',
+    file: [
+      {label: '録音開始', path: '001.mp3'}
+    ],
+    contents: [
+      {
+        file: 0,
+        list: [
+          {time: '19:56', label: '合奏開始'},
+          {time: '21:33', label: '基礎合奏'},
+          {time: '29:10', label: 'Make you happy'},
+          {time: '42:30', label: '虹'},
+          {time: '48:28', label: '夜に駆ける'},
+          {time: '1:02:45', label: 'コンパス・オブ・ユア・ハート'},
+          {time: '1:27:19', label: '炎'},
+          {time: '1:45:32', label: 'となりのトトロ'},
+        ]
+      },
+    ]
+  },
 ]
 
 module.exports = {
