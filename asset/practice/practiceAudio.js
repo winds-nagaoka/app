@@ -135,7 +135,8 @@ const practiceAudio = [
     id: '20210501',
     directory: '20210501/',
     file: [
-      {label: '録音開始', path: '001.mp3'}
+      {label: '録音開始', path: '001.mp3'},
+      {label: '合奏再開', path: '002.mp3'}
     ],
     contents: [
       {
@@ -149,6 +150,13 @@ const practiceAudio = [
           {time: '1:02:45', label: 'コンパス・オブ・ユア・ハート'},
           {time: '1:27:19', label: '炎'},
           {time: '1:45:32', label: 'となりのトトロ'},
+        ]
+      },
+      {
+        file: 1,
+        list: [
+          {time: '00:00', label: 'となりのトトロ'},
+          {time: '33:10', label: 'スペイン'},
         ]
       },
     ]
