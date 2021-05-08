@@ -416,6 +416,37 @@ const miniConcert = [
       {audio: 9, video: 9, title: 'オーメンズ・オブ・ラブ'},
       {audio: 10, video: 10, title: 'アイデア', composer: '星野源'}
     ]
+  }, {
+////////////////////////////////////
+////// 2021年春のミニコンサート //////
+////////////////////////////////////
+    id: 'mini2021',
+    type: 'mini',
+    title: '春のミニコンサート2021',
+    time: {
+      date: '2021年5月8日(土)',
+      timestamp: 1620450000
+    },
+    place: ['長岡リリックホール', 'ポケットステージ'],
+    conductor: [{name: '今井優太'}, {name: '髙橋亮'}],
+    poster: 'https://winds-n.com/image/poster/mini/2021.png',
+    guide: 'https://winds-n.com/mini2021',
+    contents: [
+      {label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7]},
+      {label: 'アンコール', music: [8, 9]},
+    ],
+    data: [
+      {audio: 0, title: 'Happiness', composer: '嵐'},
+      {audio: 1, title: 'スペイン', composer: 'C.コリア', arranger: '熱帯JAZZ楽団'},
+      {audio: 2, title: '炎', composer: 'LiSA'},
+      {audio: 3, title: 'ディズニーヴィランズ・メドレー', composer: 'B.ヒーレー, B.ベーカー, M.ムソルグスキ, A.メンケン', arranger: '鈴木 英史'},
+      {audio: 4, title: 'コンパス・オブ・ユア・ハート', composer: 'A.メンケン'},
+      {audio: 5, title: 'Make you happy', composer: 'NiziU'},
+      {audio: 6, title: '夜に駆ける', composer: 'YOASOBI'},
+      {audio: 7, title: '「となりのトトロ」～コンサート・バンドのためのセレクション', composer: '後藤洋'},
+      {audio: 8, title: '虹', composer: '菅田将暉'},
+      {audio: 9, title: 'アフリカン・シンフォニー', composer: 'V.マッコイ'},
+    ]
   }
 ]
 

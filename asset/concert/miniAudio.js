@@ -225,6 +225,22 @@ const miniConcert = [
       {available: true, data: 9, path: '010.mp3'},
       {available: true, data: 10, path: '011.mp3'}
     ]
+  }, {
+    id: 'mini2021',
+    status: true,
+    baseSrc: 'mini2021/',
+    data: [
+      {available: true, data: 0, path: '001.mp3'},
+      {available: true, data: 1, path: '002.mp3'},
+      {available: true, data: 2, path: '003.mp3'},
+      {available: true, data: 3, path: '004.mp3'},
+      {available: true, data: 4, path: '005.mp3'},
+      {available: true, data: 5, path: '006.mp3'},
+      {available: true, data: 6, path: '007.mp3'},
+      {available: true, data: 7, path: '008.mp3'},
+      {available: true, data: 8, path: '009.mp3'},
+      {available: true, data: 9, path: '010.mp3'},
+    ]
   }
 ]
 
