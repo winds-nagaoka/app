@@ -53,6 +53,12 @@ const miniConcert = [
     baseSrcThumbnail: 'mini2019/thumbnail/',
     baseSrcOriginal: 'mini2019/original/',
     count: 491
+  }, {
+    id: 'mini2021',
+    status: true,
+    baseSrcThumbnail: 'mini2021/thumbnail/',
+    baseSrcOriginal: 'mini2021/original/',
+    count: 590
   }
 ]
 
