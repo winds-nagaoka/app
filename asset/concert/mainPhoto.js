@@ -83,6 +83,12 @@ const mainConcert = [
     baseSrcThumbnail: '33rd/thumbnail/',
     baseSrcOriginal: '33rd/original/',
     count: 426
+  }, {
+    id: 'main034',
+    status: true,
+    baseSrcThumbnail: '34th/thumbnail/',
+    baseSrcOriginal: '34th/original/',
+    count: 399
   }
 ]
 
