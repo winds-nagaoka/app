@@ -639,6 +639,19 @@ const mainConcert = [
       {available: true, data: 3, path: '004.mp3'},
       {available: true, data: 4, path: '005.mp3'}
     ]
+  }, {
+    id: 'main034',
+    status: true,
+    baseSrc: '34th/',
+    data: [
+      {available: true, data: 0, path: '001.mp3'},
+      {available: true, data: 1, path: '002.mp3'},
+      {available: true, data: 2, path: '003.mp3'},
+      {available: true, data: 3, path: '004.mp3'},
+      {available: true, data: 4, path: '005.mp3'},
+      {available: true, data: 5, path: '006.mp3'},
+      {available: true, data: 6, path: '007.mp3'}
+    ]
   }
 ]
 
