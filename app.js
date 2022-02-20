@@ -20,11 +20,11 @@ app.use((req, res, next) => {
   next()
 })
 
-const urlPracticeBase = 'https://misakikato.xyz/winds/practice/'
-const urlSourceBase = 'https://misakikato.xyz/winds/source/'
-const urlAudioBase = 'https://misakikato.xyz/winds/archive/audio/'
-const urlVideoBase = 'https://misakikato.xyz/winds/archive/video/'
-const urlPhotoBase = 'https://misakikato.xyz/winds/archive/photo/'
+const urlPracticeBase = 'https://storage.googleapis.com/winds-storage/practice/'
+const urlSourceBase = 'https://storage.googleapis.com/winds-storage/source/'
+const urlAudioBase = 'https://storage.googleapis.com/winds-storage/archive/audio/'
+const urlVideoBase = 'https://storage.googleapis.com/winds-storage/archive/video/'
+const urlPhotoBase = 'https://storage.googleapis.com/winds-storage/archive/photo/'
 
 const lib = require('./library/library')
 const concert = require('./library/concert')
