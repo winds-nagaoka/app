@@ -447,6 +447,38 @@ const miniConcert = [
       {audio: 8, title: '虹', composer: '菅田将暉'},
       {audio: 9, title: 'アフリカン・シンフォニー', composer: 'V.マッコイ'},
     ]
+  }, {
+////////////////////////////////////
+////// 2022年春のミニコンサート //////
+////////////////////////////////////
+    id: 'mini2022',
+    type: 'mini',
+    title: '春のミニコンサート2022',
+    time: {
+      date: '2022年5月7日(土)',
+      timestamp: 1651899600,
+      time: '14:00',
+    },
+    place: ['長岡リリックホール', 'ポケットステージ'],
+    conductor: [{name: '今井優太'}, {name: '髙橋亮'}],
+    poster: 'https://winds-n.com/image/poster/mini/2022.png',
+    guide: 'https://winds-n.com/mini2022',
+    contents: [
+      {label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7]},
+      {label: 'アンコール', music: [8, 9]},
+    ],
+    data: [
+      {title: 'ドラゴンクエストより序曲', composer: 'すぎやまこういち'},
+      {title: 'Dear Mr.Jones', arranger: '熱帯JAZZ楽団'},
+      {title: 'ツバメ', composer: 'YOASOBI'},
+      {title: 'ヒットソング・プレイバック90s'},
+      {title: 'ディープパープルメドレー'},
+      {title: 'アルデバラン', composer: 'AI'},
+      {title: 'ルパン三世メドレー'},
+      {title: 'ディズニーメドレーII'},
+      {title: '白い恋人たち', composer: 'フランシス・レイ'},
+      {title: 'マツケンサンバII', composer: '宮川彬良'},
+    ]
   }
 ]
 
