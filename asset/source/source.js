@@ -12,7 +12,7 @@ const sourceList = [
     contents: [
       {label: '第1部', music: [0, 1, 2, 3]},
       {label: '第2部', music: [4, 5]},
-      {label: 'アンコール', music: [6, 7, 8]},
+      {label: 'アンコール', music: [6, 7]},
     ],
     data: [
       {audio: 0, title: 'サンダーバード', composer: 'B.グレイ', arranger: 'P.スパーク'},
