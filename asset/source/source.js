@@ -19,10 +19,9 @@ const sourceList = [
       {audio: 1, title: '海の歌', composer: 'R.ミッチェル'},
       {audio: 2, title: '「千と千尋の神隠し」ハイライト', composer: '久石譲'},
       {audio: 3, title: '祝典のための音楽', composer: 'P.スパーク', movement: ['第1楽章 con brio', '第2楽章 andantino', '第3楽章 vivo']},
-      {audio: 6, title: '歌劇「ムラダ」より貴族たちの行進', composer: 'R.コルサコフ'},
+      {audio: 6, title: '吹奏楽のための「エール・マーチ」', composer: '宮下秀樹'},
       {audio: 7, title: 'ローマの噴水', composer: 'O.レスピーギ'},
-      {audio: 8, title: '吹奏楽のための「エール・マーチ」', composer: '宮下秀樹'},
-      {title: 'グリーンスリーブス/ロンドンデリー'},
+      {audio: 8, title: 'ロンドンデリーの歌'},
       {audio: 9, title: 'ブロックM', composer: 'J.H.ビリック'},
     ],
   }
