@@ -1119,6 +1119,38 @@ const mainConcert = [
       {audio: 5, title: '木陰の散歩道', composer: 'E.F.ゴールドマン'},
       {audio: 6, title: 'ブロックM', composer: 'J.H.ビリック'},
     ]
+  }, {
+//////////////////////////////////
+////// 第35回定期演奏会データ //////
+//////////////////////////////////
+    id: 'main035',
+    type: 'main',
+    title: '第35回定期演奏会',
+    time: {
+      timestamp: 1665291600,
+      date: '2022年10月9日(日)',
+      time: '14:00',
+      label: '開演',
+    },
+    place: ['長岡リリックホール', 'コンサートホール'],
+    conductor: [{name: '河本隆吉'}],
+    poster: 'https://winds-n.com/image/poster/main/35th.jpg',
+    guide: 'https://winds-n.com/35thconcert',
+    contents: [
+      {label: '第1部', music: [0, 1, 2, 3]},
+      {label: '第2部', music: [4, 5]},
+      {label: 'アンコール', music: [6, 7]},
+    ],
+    data: [
+      {title: 'サンダーバード', composer: 'B.グレイ', arranger: 'P.スパーク'},
+      {title: '海の歌', composer: 'R.ミッチェル'},
+      {title: '「千と千尋の神隠し」ハイライト', composer: '久石譲'},
+      {title: '祝典のための音楽', composer: 'P.スパーク', movement: ['第1楽章 con brio', '第2楽章 andantino', '第3楽章 vivo']},
+      {title: '吹奏楽のための「エール・マーチ」', composer: '宮下秀樹'},
+      {title: 'ローマの噴水', composer: 'O.レスピーギ', movement: ['夜明けのジュリアの谷の噴水', '朝のトリトンの噴水', '真昼のトレヴィの泉', '黄昏のメディチ荘の噴水']},
+      {title: 'イタリアーナ'},
+      {title: 'ブロックM', composer: 'J.H.ビリック'},
+    ]
   }
 ]
 
