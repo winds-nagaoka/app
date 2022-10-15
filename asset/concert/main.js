@@ -1142,14 +1142,14 @@ const mainConcert = [
       {label: 'アンコール', music: [6, 7]},
     ],
     data: [
-      {title: 'サンダーバード', composer: 'B.グレイ', arranger: 'P.スパーク'},
-      {title: '海の歌', composer: 'R.ミッチェル'},
-      {title: '「千と千尋の神隠し」ハイライト', composer: '久石譲'},
-      {title: '祝典のための音楽', composer: 'P.スパーク', movement: ['第1楽章 con brio', '第2楽章 andantino', '第3楽章 vivo']},
-      {title: '吹奏楽のための「エール・マーチ」', composer: '宮下秀樹'},
-      {title: 'ローマの噴水', composer: 'O.レスピーギ', movement: ['夜明けのジュリアの谷の噴水', '朝のトリトンの噴水', '真昼のトレヴィの泉', '黄昏のメディチ荘の噴水']},
-      {title: 'イタリアーナ'},
-      {title: 'ブロックM', composer: 'J.H.ビリック'},
+      {audio: 0, title: 'サンダーバード', composer: 'B.グレイ', arranger: 'P.スパーク'},
+      {audio: 1, title: '海の歌', composer: 'R.ミッチェル'},
+      {audio: 2, title: '「千と千尋の神隠し」ハイライト', composer: '久石譲'},
+      {audio: 3, title: '祝典のための音楽', composer: 'P.スパーク', movement: ['第1楽章 con brio', '第2楽章 andantino', '第3楽章 vivo']},
+      {audio: 4, title: '吹奏楽のための「エール・マーチ」', composer: '宮下秀樹'},
+      {audio: 5, title: 'ローマの噴水', composer: 'O.レスピーギ', movement: ['夜明けのジュリアの谷の噴水', '朝のトリトンの噴水', '真昼のトレヴィの泉', '黄昏のメディチ荘の噴水']},
+      {audio: 6, title: 'イタリアーナ', composer: 'O.レスピーギ'},
+      {audio: 7, title: 'ブロックM', composer: 'J.H.ビリック'},
     ]
   }
 ]
