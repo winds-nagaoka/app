@@ -1,7 +1,7 @@
-import express from "express"
+import express from 'express'
 const app = express()
 
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({ extended: true }))
 
 // const compression = require('compression')
 // app.use(compression({
@@ -23,18 +23,18 @@ const urlAudioBase = 'https://storage.googleapis.com/winds-storage/archive/audio
 const urlVideoBase = 'https://storage.googleapis.com/winds-storage/archive/video/'
 const urlPhotoBase = 'https://storage.googleapis.com/winds-storage/archive/photo/'
 
-import { lib } from "./library/library"
-import { concert } from "./library/concert"
-import { audio } from "./library/audio"
-import { photo } from "./library/photo"
-import { video } from "./library/video"
-import { practice } from "./library/practice"
-import { record } from "./library/record"
-import { source } from "./library/source"
-import { reference } from "./library/reference"
+import { lib } from './library/library'
+import { concert } from './library/concert'
+import { audio } from './library/audio'
+import { photo } from './library/photo'
+import { video } from './library/video'
+import { practice } from './library/practice'
+import { record } from './library/record'
+import { source } from './library/source'
+import { reference } from './library/reference'
 
 // winds-nagaoka/secrets
-import { bbs }from "secrets/bbs"
+import { bbs } from 'secrets/bbs'
 
 // ルートアクセス
 app.get('/', (req, res) => {
@@ -47,11 +47,11 @@ app.get('/', (req, res) => {
 app.post('/api/concert', (req, res) => {
   const session = req.body.session
   console.log('[' + lib.showTime() + '] api/concert: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       concert.loadMain((docs) => {
-        if (!docs) return res.json({status: true, list: []})
-        return res.json({status: true, list: docs})
+        if (!docs) return res.json({ status: true, list: [] })
+        return res.json({ status: true, list: docs })
       })
     }
   })
@@ -61,19 +61,19 @@ app.post('/api/concert', (req, res) => {
 app.post('/web/concert', (req, res) => {
   console.log('[' + lib.showTime() + '] web/concert')
   concert.loadMain((docs) => {
-    if (!docs) return res.json({status: true, list: []})
-    return res.json({status: true, list: docs})
+    if (!docs) return res.json({ status: true, list: [] })
+    return res.json({ status: true, list: docs })
   })
 })
 
 app.post('/api/audio', (req, res) => {
   const session = req.body.session
   console.log('[' + lib.showTime() + '] api/audio: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       audio.loadAudio((docs) => {
-        if (!docs) return res.json({status: true, list: []})
-        return res.json({status: true, list: docs, url: urlAudioBase})
+        if (!docs) return res.json({ status: true, list: [] })
+        return res.json({ status: true, list: docs, url: urlAudioBase })
       })
     }
   })
@@ -83,11 +83,18 @@ app.post('/api/photo', (req, res) => {
   const session = req.body.session
   const id = req.body.id
   console.log('[' + lib.showTime() + '] api/photo: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       photo.loadPhoto(id, (docs) => {
-        if (!docs) return res.json({status: true, photo: false, list: []})
-        return res.json({status: true, photo: true, baseSrcThumbnail: docs.baseSrcThumbnail, baseSrcOriginal: docs.baseSrcOriginal, list: docs.list, url: urlPhotoBase})
+        if (!docs) return res.json({ status: true, photo: false, list: [] })
+        return res.json({
+          status: true,
+          photo: true,
+          baseSrcThumbnail: docs.baseSrcThumbnail,
+          baseSrcOriginal: docs.baseSrcOriginal,
+          list: docs.list,
+          url: urlPhotoBase,
+        })
       })
     }
   })
@@ -97,12 +104,19 @@ app.post('/api/video', (req, res) => {
   const session = req.body.session
   const id = req.body.id
   console.log('[' + lib.showTime() + '] api/video: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       video.loadVideo(id, (docs) => {
-        if (!docs) return res.json({status: true, video: false, list: []})
+        if (!docs) return res.json({ status: true, video: false, list: [] })
         const poster = docs.poster ? docs.poster : ''
-        return res.json({status: true, video: true, baseSrc: docs.baseSrc, poster, list: docs.list, url: urlVideoBase})
+        return res.json({
+          status: true,
+          video: true,
+          baseSrc: docs.baseSrc,
+          poster,
+          list: docs.list,
+          url: urlVideoBase,
+        })
       })
     }
   })
@@ -111,11 +125,11 @@ app.post('/api/video', (req, res) => {
 app.post('/api/practice', (req, res) => {
   const session = req.body.session
   console.log('[' + lib.showTime() + '] api/practice: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       practice.loadPractice((docs) => {
-        if (!docs) return res.json({status: true, list: []})
-        return res.json({status: true, list: docs})
+        if (!docs) return res.json({ status: true, list: [] })
+        return res.json({ status: true, list: docs })
       })
     }
   })
@@ -124,11 +138,11 @@ app.post('/api/practice', (req, res) => {
 app.post('/api/record', (req, res) => {
   const session = req.body.session
   console.log('[' + lib.showTime() + '] api/record: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       record.loadRecord((docs) => {
-        if (!docs) return res.json({status: true, list: []})
-        return res.json({status: true, list: docs, url: urlPracticeBase})
+        if (!docs) return res.json({ status: true, list: [] })
+        return res.json({ status: true, list: docs, url: urlPracticeBase })
       })
     }
   })
@@ -137,11 +151,11 @@ app.post('/api/record', (req, res) => {
 app.post('/api/source', (req, res) => {
   const session = req.body.session
   console.log('[' + lib.showTime() + '] api/source: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       source.loadSource((docs) => {
-        if (!docs) return res.json({status: true, list: []})
-        return res.json({status: true, list: docs})
+        if (!docs) return res.json({ status: true, list: [] })
+        return res.json({ status: true, list: docs })
       })
     }
   })
@@ -150,11 +164,11 @@ app.post('/api/source', (req, res) => {
 app.post('/api/reference', (req, res) => {
   const session = req.body.session
   console.log('[' + lib.showTime() + '] api/reference: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
       reference.loadReference((docs) => {
-        if (!docs) return res.json({status: true, list: []})
-        return res.json({status: true, list: docs, url: urlSourceBase})
+        if (!docs) return res.json({ status: true, list: [] })
+        return res.json({ status: true, list: docs, url: urlSourceBase })
       })
     }
   })
@@ -184,11 +198,11 @@ app.post('/api/path', (req, res) => {
 app.post('/api/bbs', (req, res) => {
   const session = req.body.session
   console.log('[' + lib.showTime() + '] /api/bbs: ' + session.userid + ', (token), version: ' + session.version)
-  lib.authAPI({session}, (authResult) => {
+  lib.authAPI({ session }, (authResult) => {
     if (authResult) {
-      return res.json({status: true, api: bbs.apiPass})
+      return res.json({ status: true, api: bbs.apiPass })
     } else {
-      return res.json({status: false})
+      return res.json({ status: false })
     }
   })
 })
