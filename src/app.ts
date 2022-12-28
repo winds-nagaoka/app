@@ -34,7 +34,7 @@ import { source } from "./library/source"
 import { reference } from "./library/reference"
 
 // winds-nagaoka/secrets
-const secrets = require('../../secrets')
+import { bbs }from "secrets/bbs"
 
 // ルートアクセス
 app.get('/', (req, res) => {
@@ -186,7 +186,7 @@ app.post('/api/bbs', (req, res) => {
   console.log('[' + lib.showTime() + '] /api/bbs: ' + session.userid + ', (token), version: ' + session.version)
   lib.authAPI({session}, (authResult) => {
     if (authResult) {
-      return res.json({status: true, api: secrets.bbs.apiPass})
+      return res.json({status: true, api: bbs.apiPass})
     } else {
       return res.json({status: false})
     }
