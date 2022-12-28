@@ -13,6 +13,6 @@ function loadRecord (callback) {
   })
 }
 
-module.exports = {
+export const record = {
   loadRecord
 }

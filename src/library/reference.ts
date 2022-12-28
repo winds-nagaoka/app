@@ -13,6 +13,6 @@ function loadReference (callback) {
   })
 }
 
-module.exports = {
+export const reference = {
   loadReference
 }

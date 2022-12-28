@@ -27,6 +27,6 @@ function loadPhoto (id, callback) {
   })
 }
 
-module.exports = {
+export const photo = {
   photoStatus, loadPhoto
 }

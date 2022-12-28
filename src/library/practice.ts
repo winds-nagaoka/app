@@ -13,6 +13,6 @@ function loadPractice (callback) {
   })
 }
 
-module.exports = {
+export const practice = {
   loadPractice
 }

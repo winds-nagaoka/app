@@ -26,6 +26,6 @@ function loadVideo (id, callback) {
   })
 }
 
-module.exports = {
+export const video = {
   videoStatus, loadVideo
 }

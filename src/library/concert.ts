@@ -13,6 +13,6 @@ function loadMain (callback) {
   })
 }
 
-module.exports = {
+export const concert = {
   loadMain
 }

@@ -13,6 +13,6 @@ function loadSource (callback) {
   })
 }
 
-module.exports = {
+export const source = {
   loadSource
 }

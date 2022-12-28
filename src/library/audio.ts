@@ -13,6 +13,6 @@ function loadAudio (callback) {
   })
 }
 
-module.exports = {
+export const audio = {
   loadAudio
 }
