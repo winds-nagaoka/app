@@ -1,4 +1,4 @@
-const express = require('express')
+import express from "express"
 const app = express()
 
 app.use(express.urlencoded({extended: true}))
@@ -23,15 +23,15 @@ const urlAudioBase = 'https://storage.googleapis.com/winds-storage/archive/audio
 const urlVideoBase = 'https://storage.googleapis.com/winds-storage/archive/video/'
 const urlPhotoBase = 'https://storage.googleapis.com/winds-storage/archive/photo/'
 
-const lib = require('./library/library')
-const concert = require('./library/concert')
-const audio = require('./library/audio')
-const photo = require('./library/photo')
-const video = require('./library/video')
-const practice = require('./library/practice')
-const record = require('./library/record')
-const source = require('./library/source')
-const reference = require('./library/reference')
+import { lib } from "./library/library"
+import { concert } from "./library/concert"
+import { audio } from "./library/audio"
+import { photo } from "./library/photo"
+import { video } from "./library/video"
+import { practice } from "./library/practice"
+import { record } from "./library/record"
+import { source } from "./library/source"
+import { reference } from "./library/reference"
 
 // winds-nagaoka/secrets
 const secrets = require('../../secrets')

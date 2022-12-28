@@ -1,5 +1,5 @@
-const path = require('path')
-const NeDB = require('nedb')
+import path from "path"
+import NeDB from "nedb"
 
 const practiceDB = new NeDB({
   filename: path.join(__dirname, '../database/practice.db'),
