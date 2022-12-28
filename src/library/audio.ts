@@ -6,7 +6,17 @@ const audioDB = new NeDB({
   autoload: true,
 })
 
-function loadAudio(callback) {
+type Audio = {
+  id: string
+  type: 'main' | 'mini' | 'other'
+  time: number
+  status: boolean
+  baseSrc: `${string}/`
+  list: { available: boolean; data: number; path: `${string}.mp3` }[]
+  _id: string
+}
+
+function loadAudio(callback: (docs: Audio[] | null) => void) {
   audioDB
     .find({})
     .sort({ time: 1 })

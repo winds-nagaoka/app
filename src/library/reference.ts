@@ -6,11 +6,20 @@ const referenceDB = new NeDB({
   autoload: true,
 })
 
-function loadReference(callback) {
+type Reference = {
+  id: string
+  time: number
+  status: boolean
+  baseSrc: string
+  list: { available: boolean; data: number; path: string }[]
+  _id: string
+}
+
+function loadReference(callback: (docs: Reference[] | null) => void) {
   referenceDB
     .find({})
     .sort({ time: 1 })
-    .exec((err, docs) => {
+    .exec((err, docs: Reference[] | null) => {
       if (err || !docs) return callback(null)
       return callback(docs)
     })

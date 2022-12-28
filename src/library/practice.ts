@@ -6,7 +6,20 @@ const practiceDB = new NeDB({
   autoload: true,
 })
 
-function loadPractice(callback) {
+type Practice = {
+  id: string
+  time: number
+  detail: {
+    id: string
+    recordStatus: true
+    time: { timestamp: number; date: string; time: string }
+    place: string[]
+    label: string
+  }
+  _id: string
+}
+
+function loadPractice(callback: (docs: Practice[] | null) => void) {
   practiceDB
     .find({})
     .sort({ time: 1 })

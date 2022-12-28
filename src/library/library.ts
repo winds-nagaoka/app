@@ -1,6 +1,14 @@
-const request = require('superagent')
+import request from 'superagent'
 
-function authAPI(send, callback) {
+type Session = {
+  userid: string
+  clientid: string
+  clientToken: string
+  useragent: string
+  version: string
+}
+
+function authAPI(send: { session: Session }, callback: (result: boolean) => void) {
   request
     .post('https://auth.winds-n.com/auth')
     .type('form')
@@ -15,7 +23,7 @@ function authAPI(send, callback) {
 
 function showTime() {
   const time = new Date()
-  const z = (v) => {
+  const z = (v: number) => {
     const s = '00' + v
     return s.substr(s.length - 2, 2)
   }

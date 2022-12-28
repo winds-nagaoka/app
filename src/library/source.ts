@@ -6,11 +6,26 @@ const sourceDB = new NeDB({
   autoload: true,
 })
 
-function loadSource(callback) {
+type Source = {
+  id: string
+  time: number
+  detail: {
+    id: string
+    title: string
+    type: 'source'
+    time: { timestamp: number; date: string; time: string }
+    sourceStatus: true
+    contents: { label: string; music: number[] }[]
+    data: { audio: number; title: string; composer: string; arranger: string; movement: string[] }[]
+  }
+  _id: string
+}
+
+function loadSource(callback: (docs: Source[] | null) => void) {
   sourceDB
     .find({})
     .sort({ time: 1 })
-    .exec((err, docs) => {
+    .exec((err, docs: Source[] | null) => {
       if (err || !docs) return callback(null)
       return callback(docs)
     })

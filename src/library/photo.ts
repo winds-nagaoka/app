@@ -6,8 +6,19 @@ const photoDB = new NeDB({
   autoload: true,
 })
 
-function photoStatus(callback) {
-  photoDB.find({}, (err, docs) => {
+type Photo = {
+  id: string
+  status: boolean
+  baseSrcThumbnail?: string
+  baseSrcOriginal?: string
+  list?: string[]
+  _id: string
+}
+
+type PhotoStatus = Omit<Photo, 'list' | 'baseSrcOriginal' | 'baseSrcThumbnail'>
+
+function photoStatus(callback: (docs: PhotoStatus[] | null) => void) {
+  photoDB.find({}, (err: Error, docs: Photo[] | null) => {
     if (err || !docs) return callback(null)
     return callback(
       docs.map((e, i) => {
@@ -15,7 +26,7 @@ function photoStatus(callback) {
       })
     )
   })
-  function del(e) {
+  function del(e: Photo) {
     delete e.list
     delete e.baseSrcOriginal
     delete e.baseSrcThumbnail
@@ -23,7 +34,7 @@ function photoStatus(callback) {
   }
 }
 
-function loadPhoto(id, callback) {
+function loadPhoto(id: string, callback: (docs: Photo | null) => void) {
   photoDB.findOne({ id }, (err, docs) => {
     if (err || !docs) return callback(null)
     return callback(docs)

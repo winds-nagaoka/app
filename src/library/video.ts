@@ -6,8 +6,19 @@ const videoDB = new NeDB({
   autoload: true,
 })
 
-function videoStatus(callback) {
-  videoDB.find({}, (err, docs) => {
+type Video = {
+  id: string
+  status: boolean
+  baseSrc?: string
+  poster?: string
+  list?: { available: boolean; data: number; path: string; addtitle: string }[]
+  _id: string
+}
+
+type VideoStatus = Omit<Video, 'list' | 'poster' | 'baseSrc'>
+
+function videoStatus(callback: (docs: VideoStatus[] | null) => void) {
+  videoDB.find({}, (err: Error, docs: Video[] | null) => {
     if (err || !docs) return callback(null)
     return callback(
       docs.map((e, i) => {
@@ -15,7 +26,7 @@ function videoStatus(callback) {
       })
     )
   })
-  function del(e) {
+  function del(e: Video) {
     delete e.list
     delete e.poster
     delete e.baseSrc
@@ -23,7 +34,7 @@ function videoStatus(callback) {
   }
 }
 
-function loadVideo(id, callback) {
+function loadVideo(id: string, callback: (docs: Video | null) => void) {
   videoDB.findOne({ id }, (err, docs) => {
     if (err || !docs) return callback(null)
     return callback(docs)

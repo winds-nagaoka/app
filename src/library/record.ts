@@ -6,7 +6,22 @@ const recordDB = new NeDB({
   autoload: true,
 })
 
-function loadRecord(callback) {
+type Record = {
+  id: string
+  time: number
+  detail: {
+    id: string
+    directory: string
+    file: { label: string; path: string }[]
+    contents: {
+      file: number
+      list: { time: string; label: string }[]
+    }[]
+  }
+  _id: string
+}
+
+function loadRecord(callback: (docs: Record[] | null) => void) {
   recordDB
     .find({})
     .sort({ time: 1 })

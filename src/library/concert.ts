@@ -6,11 +6,30 @@ const concertDB = new NeDB({
   autoload: true,
 })
 
-function loadMain(callback) {
+type Concert = {
+  id: string
+  time: number
+  type: 'main' | 'mini' | 'other'
+  detail: {
+    id: string
+    type: 'main' | 'mini' | 'other'
+    title: string
+    time: { timestamp: number; date: string; time: string; label: string }
+    place: string[]
+    conductor: { name: string }[]
+    poster?: string
+    guide?: string
+    contents: { label: string; music: number[] }[]
+    data: { title: string; composer?: string; arranger?: string; movement?: string[] }[]
+  }
+  _id: string
+}
+
+function loadMain(callback: (docs: Concert[] | null) => void) {
   concertDB
     .find({})
     .sort({ time: 1 })
-    .exec((err, docs) => {
+    .exec((err, docs: Concert[] | null) => {
       if (err || !docs) return callback(null)
       return callback(docs)
     })
