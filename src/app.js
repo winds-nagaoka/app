@@ -37,7 +37,7 @@ const source = require('./library/source')
 const reference = require('./library/reference')
 
 // winds-nagaoka/secrets
-const secrets = require('../secrets')
+const secrets = require('../../secrets')
 
 // ルートアクセス
 app.get('/', (req, res) => {
