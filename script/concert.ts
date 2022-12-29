@@ -21,24 +21,24 @@ import { miniConcert } from '../asset/concert/mini'
 import { otherConcert } from '../asset/concert/other'
 
 concertDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < mainConcert.mainConcert.length; i++) {
-    var data = mainConcert.mainConcert[i]
+  for (var i = 0; i < mainConcert.length; i++) {
+    var data = mainConcert[i]
     var concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
     concertDB.insert(concert, (err, newdoc) => {
       if (err) return console.log('error: ' + err)
       // console.log(data.id + ', main OK')
     })
   }
-  for (var i = 0; i < miniConcert.miniConcert.length; i++) {
-    var data = miniConcert.miniConcert[i]
+  for (var i = 0; i < miniConcert.length; i++) {
+    var data = miniConcert[i]
     var concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
     concertDB.insert(concert, (err, newdoc) => {
       if (err) return console.log('error: ' + err)
       // console.log(data.id + ', main OK')
     })
   }
-  for (var i = 0; i < otherConcert.otherConcert.length; i++) {
-    var data = otherConcert.otherConcert[i]
+  for (var i = 0; i < otherConcert.length; i++) {
+    var data = otherConcert[i]
     var concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
     concertDB.insert(concert, (err, newdoc) => {
       if (err) return console.log('error: ' + err)

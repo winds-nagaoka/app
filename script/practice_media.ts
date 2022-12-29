@@ -21,24 +21,24 @@ import { practiceList } from '../asset/practice/practice'
 import { practiceAudio } from '../asset/practice/practiceAudio'
 
 function recordStatus(id) {
-  for (var i = 0; i < practiceLog.practiceList.length; i++) {
-    if (practiceLog.practiceList[i].id === id) {
-      return practiceLog.practiceList[i].recordStatus
+  for (var i = 0; i < practiceList.length; i++) {
+    if (practiceList[i].id === id) {
+      return practiceList[i].recordStatus
     }
   }
 }
 
 function practiceTime(id) {
-  for (var i = 0; i < practiceLog.practiceList.length; i++) {
-    if (practiceLog.practiceList[i].id === id) {
-      return practiceLog.practiceList[i].time.timestamp
+  for (var i = 0; i < practiceList.length; i++) {
+    if (practiceList[i].id === id) {
+      return practiceList[i].time.timestamp
     }
   }
 }
 
 recordDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < practiceAudio.practiceAudio.length; i++) {
-    var data = practiceAudio.practiceAudio[i]
+  for (var i = 0; i < practiceAudio.length; i++) {
+    var data = practiceAudio[i]
     if (recordStatus(data.id)) {
       var musiclist = { id: data.id, time: practiceTime(data.id), status: data.status, detail: data }
       recordDB.insert(musiclist, (err, newdoc) => {

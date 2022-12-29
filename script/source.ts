@@ -20,8 +20,8 @@ const sourceDB = new NeDB({
 import { sourceList } from '../asset/source/source'
 
 sourceDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < sourceLog.sourceList.length; i++) {
-    var data = sourceLog.sourceList[i]
+  for (var i = 0; i < sourceList.length; i++) {
+    var data = sourceList[i]
     var concert = { id: data.id, time: data.time.timestamp, detail: data }
     if (data.sourceStatus) {
       sourceDB.insert(concert, (err, newdoc) => {

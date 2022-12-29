@@ -21,25 +21,25 @@ import { sourceList } from '../asset/source/source'
 import { sourceAudio } from '../asset/source/sourceAudio'
 
 function referenceStatus(id) {
-  for (var i = 0; i < sourceLog.sourceList.length; i++) {
-    if (sourceLog.sourceList[i].id === id) {
+  for (var i = 0; i < sourceList.length; i++) {
+    if (sourceList[i].id === id) {
       // console.log(sourceLog.sourceList[i], id)
-      return sourceLog.sourceList[i].sourceStatus
+      return sourceList[i].sourceStatus
     }
   }
 }
 
 function sourceTime(id) {
-  for (var i = 0; i < sourceLog.sourceList.length; i++) {
-    if (sourceLog.sourceList[i].id === id) {
-      return sourceLog.sourceList[i].time.timestamp
+  for (var i = 0; i < sourceList.length; i++) {
+    if (sourceList[i].id === id) {
+      return sourceList[i].time.timestamp
     }
   }
 }
 
 referenceDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < sourceAudio.sourceAudio.length; i++) {
-    var data = sourceAudio.sourceAudio[i]
+  for (var i = 0; i < sourceAudio.length; i++) {
+    var data = sourceAudio[i]
     if (referenceStatus(data.id)) {
       if (data.status) {
         var musiclist = {

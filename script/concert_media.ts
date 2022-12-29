@@ -45,37 +45,37 @@ import { miniVideo } from '../asset/concert/miniVideo'
 import { otherVideo } from '../asset/concert/otherVideo'
 
 function concertTime(id) {
-  for (var i = 0; i < mainConcert.mainConcert.length; i++) {
-    if (mainConcert.mainConcert[i].id === id) {
-      return mainConcert.mainConcert[i].time.timestamp
+  for (var i = 0; i < mainConcert.length; i++) {
+    if (mainConcert[i].id === id) {
+      return mainConcert[i].time.timestamp
     }
   }
-  for (var i = 0; i < miniConcert.miniConcert.length; i++) {
-    if (miniConcert.miniConcert[i].id === id) {
-      return miniConcert.miniConcert[i].time.timestamp
+  for (var i = 0; i < miniConcert.length; i++) {
+    if (miniConcert[i].id === id) {
+      return miniConcert[i].time.timestamp
     }
   }
-  for (var i = 0; i < otherConcert.otherConcert.length; i++) {
-    if (otherConcert.otherConcert[i].id === id) {
-      return otherConcert.otherConcert[i].time.timestamp
+  for (var i = 0; i < otherConcert.length; i++) {
+    if (otherConcert[i].id === id) {
+      return otherConcert[i].time.timestamp
     }
   }
 }
 
 function concertType(id) {
-  for (var i = 0; i < mainConcert.mainConcert.length; i++) {
-    if (mainConcert.mainConcert[i].id === id) {
-      return mainConcert.mainConcert[i].type
+  for (var i = 0; i < mainConcert.length; i++) {
+    if (mainConcert[i].id === id) {
+      return mainConcert[i].type
     }
   }
-  for (var i = 0; i < miniConcert.miniConcert.length; i++) {
-    if (miniConcert.miniConcert[i].id === id) {
-      return miniConcert.miniConcert[i].type
+  for (var i = 0; i < miniConcert.length; i++) {
+    if (miniConcert[i].id === id) {
+      return miniConcert[i].type
     }
   }
-  for (var i = 0; i < otherConcert.otherConcert.length; i++) {
-    if (otherConcert.otherConcert[i].id === id) {
-      return otherConcert.otherConcert[i].type
+  for (var i = 0; i < otherConcert.length; i++) {
+    if (otherConcert[i].id === id) {
+      return otherConcert[i].type
     }
   }
 }
@@ -84,8 +84,8 @@ function concertType(id) {
 // Audio ///////////////////////////
 ////////////////////////////////////
 audioDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < mainAudio.mainConcert.length; i++) {
-    var data = mainAudio.mainConcert[i]
+  for (var i = 0; i < mainAudio.length; i++) {
+    var data = mainAudio[i]
     if (data.status) {
       var musiclist = {
         id: data.id,
@@ -101,8 +101,8 @@ audioDB.remove({}, { multi: true }, (err, numRemoved) => {
       })
     }
   }
-  for (var i = 0; i < miniAudio.miniConcert.length; i++) {
-    var data = miniAudio.miniConcert[i]
+  for (var i = 0; i < miniAudio.length; i++) {
+    var data = miniAudio[i]
     if (data.status) {
       var musiclist = {
         id: data.id,
@@ -118,8 +118,8 @@ audioDB.remove({}, { multi: true }, (err, numRemoved) => {
       })
     }
   }
-  for (var i = 0; i < otherAudio.otherConcert.length; i++) {
-    var data = otherAudio.otherConcert[i]
+  for (var i = 0; i < otherAudio.length; i++) {
+    var data = otherAudio[i]
     if (data.status) {
       var musiclist = {
         id: data.id,
@@ -141,8 +141,8 @@ audioDB.remove({}, { multi: true }, (err, numRemoved) => {
 // Photo ///////////////////////////
 ////////////////////////////////////
 photoDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < mainPhoto.mainConcert.length; i++) {
-    var data = mainPhoto.mainConcert[i]
+  for (var i = 0; i < mainPhoto.length; i++) {
+    var data = mainPhoto[i]
     if (data.status) {
       // console.log(data, i)
       var list = []
@@ -168,8 +168,8 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
       })
     }
   }
-  for (var i = 0; i < miniPhoto.miniConcert.length; i++) {
-    var data = miniPhoto.miniConcert[i]
+  for (var i = 0; i < miniPhoto.length; i++) {
+    var data = miniPhoto[i]
     if (data.status) {
       // console.log(data, i)
       var list = []
@@ -201,8 +201,8 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
 // Video ///////////////////////////
 ////////////////////////////////////
 videoDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < mainVideo.mainConcert.length; i++) {
-    var data = mainVideo.mainConcert[i]
+  for (var i = 0; i < mainVideo.length; i++) {
+    var data = mainVideo[i]
     if (data.status) {
       var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, poster: data.poster, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
@@ -210,8 +210,8 @@ videoDB.remove({}, { multi: true }, (err, numRemoved) => {
       })
     }
   }
-  for (var i = 0; i < miniVideo.miniConcert.length; i++) {
-    var data = miniVideo.miniConcert[i]
+  for (var i = 0; i < miniVideo.length; i++) {
+    var data = miniVideo[i]
     if (data.status) {
       var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
@@ -219,8 +219,8 @@ videoDB.remove({}, { multi: true }, (err, numRemoved) => {
       })
     }
   }
-  for (var i = 0; i < otherVideo.otherConcert.length; i++) {
-    var data = otherVideo.otherConcert[i]
+  for (var i = 0; i < otherVideo.length; i++) {
+    var data = otherVideo[i]
     if (data.status) {
       var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {

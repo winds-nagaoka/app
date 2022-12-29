@@ -20,8 +20,8 @@ const practiceDB = new NeDB({
 import { practiceList } from '../asset/practice/practice'
 
 practiceDB.remove({}, { multi: true }, (err, numRemoved) => {
-  for (var i = 0; i < practiceLog.practiceList.length; i++) {
-    var data = practiceLog.practiceList[i]
+  for (var i = 0; i < practiceList.length; i++) {
+    var data = practiceList[i]
     var concert = { id: data.id, time: data.time.timestamp, detail: data }
     practiceDB.insert(concert, (err, newdoc) => {
       if (err) return console.log('error: ' + err)
