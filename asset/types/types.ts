@@ -89,3 +89,13 @@ export type Photo = {
   baseSrcOriginal: `${string}/original/`
   count: number
 }
+
+export type Video =
+  | { id: string; status: false }
+  | {
+      id: `main0${TensPlace}${OnesPlace}` | `mini${string}` | string
+      status: true
+      baseSrc: `${string}/`
+      poster?: `https://video.winds-n.com/poster_${string}.png`
+      data: { available: boolean; data: number; path: string; addtitle?: string }[]
+    }

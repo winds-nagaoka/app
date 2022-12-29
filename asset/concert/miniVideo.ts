@@ -1,4 +1,6 @@
-const miniConcert = [
+import type { Video } from '../types/types'
+
+const miniConcert: Video[] = [
   {
     id: 'mini2012',
     status: true,

@@ -1,4 +1,6 @@
-const otherConcert = [
+import type { Video } from '../types/types'
+
+const otherConcert: Video[] = [
   {
     id: 'other001',
     status: true,
