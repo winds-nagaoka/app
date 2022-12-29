@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,md}'"
+    "prettier": "prettier --write '{asset,src}/**/*.{js,jsx,ts,tsx,json,md}'"
   },
   "author": "",
   "license": "ISC",
