@@ -1,4 +1,6 @@
-const miniConcert = [
+import type { MiniConcert } from '../types/types'
+
+const miniConcert: MiniConcert[] = [
   {
     ////////////////////////////////////
     ////// 2007年春のミニコンサート //////

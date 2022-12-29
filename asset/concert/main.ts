@@ -1,4 +1,6 @@
-const mainConcert = [
+import type { MainConcert } from '../types/types'
+
+const mainConcert: MainConcert[] = [
   {
     //////////////////////////////////
     ////// 第1回定期演奏会データ //////

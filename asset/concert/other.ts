@@ -1,4 +1,6 @@
-const otherConcert = [
+import type { OtherConcert } from '../types/types'
+
+const otherConcert: OtherConcert[] = [
   {
     ///////////////////////////////
     ////// フラッシュモブ2016 //////
