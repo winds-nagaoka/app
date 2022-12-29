@@ -7,9 +7,9 @@
 
 ////////////////////////////////////
 
-const fs = require('fs')
-const path = require('path')
-const NeDB = require('nedb')
+import fs from 'fs'
+import path from 'path'
+import NeDB from 'nedb'
 
 const concertDB = new NeDB({
   filename: path.join(__dirname, '../database/concert.db'),
