@@ -1,4 +1,6 @@
-const otherConcert = [
+import type { Audio } from '../types/types'
+
+const otherConcert: Audio[] = [
   {
     id: 'other001',
     status: false,

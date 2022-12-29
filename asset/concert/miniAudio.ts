@@ -1,4 +1,6 @@
-const miniConcert = [
+import type { Audio } from '../types/types'
+
+const miniConcert: Audio[] = [
   {
     id: 'mini2007',
     status: true,

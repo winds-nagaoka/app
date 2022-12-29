@@ -1,4 +1,6 @@
-const mainConcert = [
+import type { Audio } from '../types/types'
+
+const mainConcert: Audio[] = [
   {
     id: 'main001',
     status: true,

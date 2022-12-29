@@ -74,3 +74,10 @@ export type OtherConcert = {
   contents: { label: 'プログラム' | '第1部' | '第2部' | 'アンコール'; music: number[] }[]
   data: { audio?: number; video?: number; title: string; composer?: string; arranger?: string; movement?: string[] }[]
 }
+
+export type Audio = {
+  id: `main0${TensPlace}${OnesPlace}` | `mini${string}` | string
+  status: boolean
+  baseSrc: string
+  data: { available: boolean; data: number; path: `${string}.mp3`; addtitle?: string }[]
+}
