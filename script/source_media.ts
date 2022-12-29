@@ -17,8 +17,8 @@ const referenceDB = new NeDB({
   autoload: true,
 })
 
-const sourceLog = require('../asset/source/source')
-const sourceAudio = require('../asset/source/sourceAudio')
+import { sourceList } from '../asset/source/source'
+import { sourceAudio } from '../asset/source/sourceAudio'
 
 function referenceStatus(id) {
   for (var i = 0; i < sourceLog.sourceList.length; i++) {

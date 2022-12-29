@@ -17,7 +17,7 @@ const practiceDB = new NeDB({
   autoload: true,
 })
 
-const practiceLog = require('../asset/practice/practice')
+import { practiceList } from '../asset/practice/practice'
 
 practiceDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < practiceLog.practiceList.length; i++) {

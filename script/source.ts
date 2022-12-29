@@ -17,7 +17,7 @@ const sourceDB = new NeDB({
   autoload: true,
 })
 
-const sourceLog = require('../asset/source/source')
+import { sourceList } from '../asset/source/source'
 
 sourceDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < sourceLog.sourceList.length; i++) {

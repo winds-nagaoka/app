@@ -29,20 +29,20 @@ const videoDB = new NeDB({
   // timestampData: true
 })
 
-const mainConcert = require('../asset/concert/main')
-const miniConcert = require('../asset/concert/mini')
-const otherConcert = require('../asset/concert/other')
+import { mainConcert } from '../asset/concert/main'
+import { miniConcert } from '../asset/concert/mini'
+import { otherConcert } from '../asset/concert/other'
 
-const mainAudio = require('../asset/concert/mainAudio')
-const miniAudio = require('../asset/concert/miniAudio')
-const otherAudio = require('../asset/concert/otherAudio')
+import { mainAudio } from '../asset/concert/mainAudio'
+import { miniAudio } from '../asset/concert/miniAudio'
+import { otherAudio } from '../asset/concert/otherAudio'
 
-const mainPhoto = require('../asset/concert/mainPhoto')
-const miniPhoto = require('../asset/concert/miniPhoto')
+import { mainPhoto } from '../asset/concert/mainPhoto'
+import { miniPhoto } from '../asset/concert/miniPhoto'
 
-const mainVideo = require('../asset/concert/mainVideo')
-const miniVideo = require('../asset/concert/miniVideo')
-const otherVideo = require('../asset/concert/otherVideo')
+import { mainVideo } from '../asset/concert/mainVideo'
+import { miniVideo } from '../asset/concert/miniVideo'
+import { otherVideo } from '../asset/concert/otherVideo'
 
 function concertTime(id) {
   for (var i = 0; i < mainConcert.mainConcert.length; i++) {

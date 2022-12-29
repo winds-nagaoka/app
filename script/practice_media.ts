@@ -17,8 +17,8 @@ const recordDB = new NeDB({
   autoload: true,
 })
 
-const practiceLog = require('../asset/practice/practice')
-const practiceAudio = require('../asset/practice/practiceAudio')
+import { practiceList } from '../asset/practice/practice'
+import { practiceAudio } from '../asset/practice/practiceAudio'
 
 function recordStatus(id) {
   for (var i = 0; i < practiceLog.practiceList.length; i++) {

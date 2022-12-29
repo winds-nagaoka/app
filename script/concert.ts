@@ -16,9 +16,9 @@ const concertDB = new NeDB({
   autoload: true,
 })
 
-const mainConcert = require('../asset/concert/main')
-const miniConcert = require('../asset/concert/mini')
-const otherConcert = require('../asset/concert/other')
+import { mainConcert } from '../asset/concert/main'
+import { miniConcert } from '../asset/concert/mini'
+import { otherConcert } from '../asset/concert/other'
 
 concertDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < mainConcert.mainConcert.length; i++) {
