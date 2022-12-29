@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "make": "./make.sh",
     "build": "tsc",
     "prettier": "prettier --write '{asset,script,src}/**/*.{js,jsx,ts,tsx,json,md}'"
   },
