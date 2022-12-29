@@ -121,3 +121,17 @@ export type PracticeAudio = {
     list: { time: string; label: string; contents?: { time: string; label: string }[] }[]
   }[]
 }
+
+export type Source = {
+  id: string
+  title: string
+  type: string
+  time: {
+    timestamp: number
+    date: string
+    time: string
+  }
+  sourceStatus: boolean
+  contents: { label: string; music: number[] }[]
+  data: { audio: number; title: string; composer?: string; arranger?: string; movement?: string[] }[]
+}

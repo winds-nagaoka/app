@@ -1,4 +1,6 @@
-const sourceList = [
+import type { Source } from '../types/types'
+
+const sourceList: Source[] = [
   {
     id: 'main035',
     title: '第35回定期演奏会',
