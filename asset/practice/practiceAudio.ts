@@ -1,5 +1,5 @@
 const practiceAudio = []
 
 module.exports = {
-  practiceAudio
+  practiceAudio,
 }
