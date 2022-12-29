@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "make": "./make.sh",
+    "prestart": "yarn make && yarn build",
+    "start": "node ./build/app.js",
     "build": "tsc",
     "prettier": "prettier --write '{asset,script,src}/**/*.{js,jsx,ts,tsx,json,md}'"
   },
