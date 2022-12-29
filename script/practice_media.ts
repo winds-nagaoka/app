@@ -40,7 +40,7 @@ recordDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < practiceAudio.length; i++) {
     var data = practiceAudio[i]
     if (recordStatus(data.id)) {
-      var musiclist = { id: data.id, time: practiceTime(data.id), status: data.status, detail: data }
+      var musiclist = { id: data.id, time: practiceTime(data.id), detail: data }
       recordDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
       })

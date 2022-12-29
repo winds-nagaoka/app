@@ -44,7 +44,6 @@ referenceDB.remove({}, { multi: true }, (err, numRemoved) => {
       if (data.status) {
         var musiclist = {
           id: data.id,
-          type: data.type,
           time: sourceTime(data.id),
           status: data.status,
           baseSrc: data.directory,
