@@ -111,3 +111,13 @@ export type Practice = {
   place: '第1スタジオ'[]
   label: string
 }
+
+export type PracticeAudio = {
+  id: string
+  directory: `${string}/`
+  file: { label: string; path: `${string}.mp3` }[]
+  contents: {
+    file: number
+    list: { time: string; label: string; contents?: { time: string; label: string }[] }[]
+  }[]
+}
