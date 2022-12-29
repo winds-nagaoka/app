@@ -19,27 +19,35 @@ const concertDB = new NeDB({
 import { mainConcert } from '../asset/concert/main'
 import { miniConcert } from '../asset/concert/mini'
 import { otherConcert } from '../asset/concert/other'
+import type { MainConcert, MiniConcert, OtherConcert } from '../asset/types/types'
 
 concertDB.remove({}, { multi: true }, (err, numRemoved) => {
+  let data: MainConcert | MiniConcert | OtherConcert
+  let concert: {
+    id: string
+    time: number
+    type: 'main' | 'mini' | 'other'
+    detail: MainConcert | MiniConcert | OtherConcert
+  }
   for (var i = 0; i < mainConcert.length; i++) {
-    var data = mainConcert[i]
-    var concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
+    data = mainConcert[i]
+    concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
     concertDB.insert(concert, (err, newdoc) => {
       if (err) return console.log('error: ' + err)
       // console.log(data.id + ', main OK')
     })
   }
   for (var i = 0; i < miniConcert.length; i++) {
-    var data = miniConcert[i]
-    var concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
+    data = miniConcert[i]
+    concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
     concertDB.insert(concert, (err, newdoc) => {
       if (err) return console.log('error: ' + err)
       // console.log(data.id + ', main OK')
     })
   }
   for (var i = 0; i < otherConcert.length; i++) {
-    var data = otherConcert[i]
-    var concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
+    data = otherConcert[i]
+    concert = { id: data.id, time: data.time.timestamp, type: data.type, detail: data }
     concertDB.insert(concert, (err, newdoc) => {
       if (err) return console.log('error: ' + err)
       // console.log(data.id + ', main OK')

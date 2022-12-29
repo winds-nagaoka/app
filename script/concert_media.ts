@@ -44,7 +44,7 @@ import { mainVideo } from '../asset/concert/mainVideo'
 import { miniVideo } from '../asset/concert/miniVideo'
 import { otherVideo } from '../asset/concert/otherVideo'
 
-function concertTime(id) {
+function concertTime(id: string) {
   for (var i = 0; i < mainConcert.length; i++) {
     if (mainConcert[i].id === id) {
       return mainConcert[i].time.timestamp
@@ -62,7 +62,7 @@ function concertTime(id) {
   }
 }
 
-function concertType(id) {
+function concertType(id: string) {
   for (var i = 0; i < mainConcert.length; i++) {
     if (mainConcert[i].id === id) {
       return mainConcert[i].type
@@ -142,11 +142,12 @@ audioDB.remove({}, { multi: true }, (err, numRemoved) => {
 ////////////////////////////////////
 photoDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < mainPhoto.length; i++) {
-    var data = mainPhoto[i]
+    let data: any = mainPhoto[i]
+    let list: any[] = []
     if (data.status) {
       // console.log(data, i)
-      var list = []
-      const z = (num) => {
+      list = []
+      const z = (num: number) => {
         const s = '000' + String(num)
         return s.substr(s.length - 3, 3)
       }
@@ -155,7 +156,7 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
         list = list.concat(add)
       }
       // console.log(data, i, list)
-      var data = {
+      data = {
         id: data.id,
         status: data.status,
         baseSrcThumbnail: data.baseSrcThumbnail,
@@ -169,11 +170,12 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
     }
   }
   for (var i = 0; i < miniPhoto.length; i++) {
-    var data = miniPhoto[i]
+    let data: any = miniPhoto[i]
+    let list: any[] = []
     if (data.status) {
       // console.log(data, i)
-      var list = []
-      const z = (num) => {
+      list = []
+      const z = (num: number) => {
         const s = '000' + String(num)
         return s.substr(s.length - 3, 3)
       }
@@ -182,7 +184,7 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
         list = list.concat(add)
       }
       // console.log(data, i, list)
-      var data = {
+      data = {
         id: data.id,
         status: data.status,
         baseSrcThumbnail: data.baseSrcThumbnail,
@@ -201,10 +203,11 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
 // Video ///////////////////////////
 ////////////////////////////////////
 videoDB.remove({}, { multi: true }, (err, numRemoved) => {
+  let musiclist: any
   for (var i = 0; i < mainVideo.length; i++) {
     var data = mainVideo[i]
     if (data.status) {
-      var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, poster: data.poster, list: data.data }
+      musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, poster: data.poster, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
       })
@@ -213,7 +216,7 @@ videoDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < miniVideo.length; i++) {
     var data = miniVideo[i]
     if (data.status) {
-      var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
+      musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
       })
@@ -222,7 +225,7 @@ videoDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < otherVideo.length; i++) {
     var data = otherVideo[i]
     if (data.status) {
-      var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
+      musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
       })

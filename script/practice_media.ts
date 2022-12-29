@@ -20,7 +20,7 @@ const recordDB = new NeDB({
 import { practiceList } from '../asset/practice/practice'
 import { practiceAudio } from '../asset/practice/practiceAudio'
 
-function recordStatus(id) {
+function recordStatus(id: string) {
   for (var i = 0; i < practiceList.length; i++) {
     if (practiceList[i].id === id) {
       return practiceList[i].recordStatus
@@ -28,7 +28,7 @@ function recordStatus(id) {
   }
 }
 
-function practiceTime(id) {
+function practiceTime(id: string) {
   for (var i = 0; i < practiceList.length; i++) {
     if (practiceList[i].id === id) {
       return practiceList[i].time.timestamp

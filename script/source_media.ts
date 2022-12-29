@@ -20,7 +20,7 @@ const referenceDB = new NeDB({
 import { sourceList } from '../asset/source/source'
 import { sourceAudio } from '../asset/source/sourceAudio'
 
-function referenceStatus(id) {
+function referenceStatus(id: string) {
   for (var i = 0; i < sourceList.length; i++) {
     if (sourceList[i].id === id) {
       // console.log(sourceLog.sourceList[i], id)
@@ -29,7 +29,7 @@ function referenceStatus(id) {
   }
 }
 
-function sourceTime(id) {
+function sourceTime(id: string) {
   for (var i = 0; i < sourceList.length; i++) {
     if (sourceList[i].id === id) {
       return sourceList[i].time.timestamp
