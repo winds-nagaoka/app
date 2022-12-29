@@ -1,6 +1,6 @@
 import type { MainConcert } from '../types/types'
 
-const mainConcert: MainConcert[] = [
+export const mainConcert: MainConcert[] = [
   {
     //////////////////////////////////
     ////// 第1回定期演奏会データ //////
@@ -1583,7 +1583,3 @@ const mainConcert: MainConcert[] = [
     ],
   },
 ]
-
-module.exports = {
-  mainConcert,
-}

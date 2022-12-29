@@ -1,6 +1,6 @@
 import type { Photo } from '../types/types'
 
-const mainConcert: Photo[] = [
+export const mainConcert: Photo[] = [
   {
     id: 'main020',
     status: true,
@@ -107,7 +107,3 @@ const mainConcert: Photo[] = [
     count: 399,
   },
 ]
-
-module.exports = {
-  mainConcert,
-}

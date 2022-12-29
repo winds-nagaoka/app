@@ -1,6 +1,6 @@
 import type { Source } from '../types/types'
 
-const sourceList: Source[] = [
+export const sourceList: Source[] = [
   {
     id: 'main035',
     title: '第35回定期演奏会',
@@ -33,7 +33,3 @@ const sourceList: Source[] = [
     ],
   },
 ]
-
-module.exports = {
-  sourceList,
-}

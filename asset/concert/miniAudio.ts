@@ -1,6 +1,6 @@
 import type { Audio } from '../types/types'
 
-const miniConcert: Audio[] = [
+export const miniConcert: Audio[] = [
   {
     id: 'mini2007',
     status: true,
@@ -258,7 +258,3 @@ const miniConcert: Audio[] = [
     ],
   },
 ]
-
-module.exports = {
-  miniConcert,
-}

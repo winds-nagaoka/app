@@ -1,6 +1,6 @@
 import type { Video } from '../types/types'
 
-const otherConcert: Video[] = [
+export const otherConcert: Video[] = [
   {
     id: 'other001',
     status: true,
@@ -34,7 +34,3 @@ const otherConcert: Video[] = [
     data: [{ available: true, data: 0, path: '001.mp4' }],
   },
 ]
-
-module.exports = {
-  otherConcert,
-}

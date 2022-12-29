@@ -1,6 +1,6 @@
 import type { SourceAudio } from '../types/types'
 
-const sourceAudio: SourceAudio[] = [
+export const sourceAudio: SourceAudio[] = [
   {
     id: 'main035',
     status: true,
@@ -19,7 +19,3 @@ const sourceAudio: SourceAudio[] = [
     ],
   },
 ]
-
-module.exports = {
-  sourceAudio,
-}

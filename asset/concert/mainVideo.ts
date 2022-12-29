@@ -1,6 +1,6 @@
 import type { Video } from '../types/types'
 
-const mainConcert: Video[] = [
+export const mainConcert: Video[] = [
   {
     id: 'main001',
     status: false,
@@ -605,7 +605,3 @@ const mainConcert: Video[] = [
     ],
   },
 ]
-
-module.exports = {
-  mainConcert,
-}

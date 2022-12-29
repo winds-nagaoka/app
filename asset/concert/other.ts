@@ -1,6 +1,6 @@
 import type { OtherConcert } from '../types/types'
 
-const otherConcert: OtherConcert[] = [
+export const otherConcert: OtherConcert[] = [
   {
     ///////////////////////////////
     ////// フラッシュモブ2016 //////
@@ -108,7 +108,3 @@ const otherConcert: OtherConcert[] = [
     ],
   },
 ]
-
-module.exports = {
-  otherConcert,
-}

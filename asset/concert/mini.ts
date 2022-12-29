@@ -1,6 +1,6 @@
 import type { MiniConcert } from '../types/types'
 
-const miniConcert: MiniConcert[] = [
+export const miniConcert: MiniConcert[] = [
   {
     ////////////////////////////////////
     ////// 2007年春のミニコンサート //////
@@ -521,7 +521,3 @@ const miniConcert: MiniConcert[] = [
     ],
   },
 ]
-
-module.exports = {
-  miniConcert,
-}
