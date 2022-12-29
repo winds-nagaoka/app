@@ -1,6 +1,6 @@
 import type { Audio } from '../types/types'
 
-export const otherConcert: Audio[] = [
+export const otherAudio: Audio[] = [
   {
     id: 'other001',
     status: false,

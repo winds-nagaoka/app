@@ -1,6 +1,6 @@
 import type { Photo } from '../types/types'
 
-export const miniConcert: Photo[] = [
+export const miniPhoto: Photo[] = [
   {
     id: 'mini2011',
     status: true,
