@@ -2,7 +2,7 @@ import path from 'path'
 import NeDB from 'nedb'
 
 const audioDB = new NeDB({
-  filename: path.join(__dirname, '../database/audio.db'),
+  filename: path.join(__dirname, '../../database/audio.db'),
   autoload: true,
 })
 

@@ -2,7 +2,7 @@ import path from 'path'
 import NeDB from 'nedb'
 
 const sourceDB = new NeDB({
-  filename: path.join(__dirname, '../database/source.db'),
+  filename: path.join(__dirname, '../../database/source.db'),
   autoload: true,
 })
 
