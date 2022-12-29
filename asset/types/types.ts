@@ -135,3 +135,10 @@ export type Source = {
   contents: { label: string; music: number[] }[]
   data: { audio: number; title: string; composer?: string; arranger?: string; movement?: string[] }[]
 }
+
+export type SourceAudio = {
+  id: string
+  status: boolean
+  directory: `${string}/`
+  data: { available: boolean; data: number; path: `${string}.mp3`; addtitle?: string }[]
+}
