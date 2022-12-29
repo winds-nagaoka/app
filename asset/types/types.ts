@@ -99,3 +99,15 @@ export type Video =
       poster?: `https://video.winds-n.com/poster_${string}.png`
       data: { available: boolean; data: number; path: string; addtitle?: string }[]
     }
+
+export type Practice = {
+  id: string
+  recordStatus: boolean
+  time: {
+    timestamp: number
+    date: Date
+    time: Time
+  }
+  place: '第1スタジオ'[]
+  label: string
+}
