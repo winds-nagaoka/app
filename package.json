@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "make": "./make.sh",
+    "predev": "yarn make && yarn build",
+    "dev": "ts-node-dev ./src/app.ts",
     "prestart": "yarn make && yarn build",
     "start": "node ./build/app.js",
     "build": "tsc",
