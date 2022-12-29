@@ -44,36 +44,36 @@ const mainVideo = require('../asset/concert/mainVideo')
 const miniVideo = require('../asset/concert/miniVideo')
 const otherVideo = require('../asset/concert/otherVideo')
 
-function concertTime (id) {
-  for (var i=0;i<mainConcert.mainConcert.length;i++) {
+function concertTime(id) {
+  for (var i = 0; i < mainConcert.mainConcert.length; i++) {
     if (mainConcert.mainConcert[i].id === id) {
       return mainConcert.mainConcert[i].time.timestamp
     }
   }
-  for (var i=0;i<miniConcert.miniConcert.length;i++) {
+  for (var i = 0; i < miniConcert.miniConcert.length; i++) {
     if (miniConcert.miniConcert[i].id === id) {
       return miniConcert.miniConcert[i].time.timestamp
     }
   }
-  for (var i=0;i<otherConcert.otherConcert.length;i++) {
+  for (var i = 0; i < otherConcert.otherConcert.length; i++) {
     if (otherConcert.otherConcert[i].id === id) {
       return otherConcert.otherConcert[i].time.timestamp
     }
   }
 }
 
-function concertType (id) {
-  for (var i=0;i<mainConcert.mainConcert.length;i++) {
+function concertType(id) {
+  for (var i = 0; i < mainConcert.mainConcert.length; i++) {
     if (mainConcert.mainConcert[i].id === id) {
       return mainConcert.mainConcert[i].type
     }
   }
-  for (var i=0;i<miniConcert.miniConcert.length;i++) {
+  for (var i = 0; i < miniConcert.miniConcert.length; i++) {
     if (miniConcert.miniConcert[i].id === id) {
       return miniConcert.miniConcert[i].type
     }
   }
-  for (var i=0;i<otherConcert.otherConcert.length;i++) {
+  for (var i = 0; i < otherConcert.otherConcert.length; i++) {
     if (otherConcert.otherConcert[i].id === id) {
       return otherConcert.otherConcert[i].type
     }
@@ -83,31 +83,52 @@ function concertType (id) {
 ////////////////////////////////////
 // Audio ///////////////////////////
 ////////////////////////////////////
-audioDB.remove({}, {multi: true}, (err, numRemoved) => {
-  for (var i=0;i<mainAudio.mainConcert.length;i++) {
+audioDB.remove({}, { multi: true }, (err, numRemoved) => {
+  for (var i = 0; i < mainAudio.mainConcert.length; i++) {
     var data = mainAudio.mainConcert[i]
     if (data.status) {
-      var musiclist = {id: data.id, type: concertType(data.id), time: concertTime(data.id), status: data.status, baseSrc: data.baseSrc, list: data.data}
+      var musiclist = {
+        id: data.id,
+        type: concertType(data.id),
+        time: concertTime(data.id),
+        status: data.status,
+        baseSrc: data.baseSrc,
+        list: data.data,
+      }
       audioDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
         // console.log(data.id + ', audio OK')
       })
     }
   }
-  for (var i=0;i<miniAudio.miniConcert.length;i++) {
+  for (var i = 0; i < miniAudio.miniConcert.length; i++) {
     var data = miniAudio.miniConcert[i]
     if (data.status) {
-      var musiclist = {id: data.id, type: concertType(data.id), time: concertTime(data.id), status: data.status, baseSrc: data.baseSrc, list: data.data}
+      var musiclist = {
+        id: data.id,
+        type: concertType(data.id),
+        time: concertTime(data.id),
+        status: data.status,
+        baseSrc: data.baseSrc,
+        list: data.data,
+      }
       audioDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
         // console.log(data.id + ', audio OK')
       })
     }
   }
-  for (var i=0;i<otherAudio.otherConcert.length;i++) {
+  for (var i = 0; i < otherAudio.otherConcert.length; i++) {
     var data = otherAudio.otherConcert[i]
     if (data.status) {
-      var musiclist = {id: data.id, type: concertType(data.id), time: concertTime(data.id), status: data.status, baseSrc: data.baseSrc, list: data.data}
+      var musiclist = {
+        id: data.id,
+        type: concertType(data.id),
+        time: concertTime(data.id),
+        status: data.status,
+        baseSrc: data.baseSrc,
+        list: data.data,
+      }
       audioDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
         // console.log(data.id + ', audio OK')
@@ -119,8 +140,8 @@ audioDB.remove({}, {multi: true}, (err, numRemoved) => {
 ////////////////////////////////////
 // Photo ///////////////////////////
 ////////////////////////////////////
-photoDB.remove({}, {multi: true}, (err, numRemoved) => {
-  for (var i=0;i<mainPhoto.mainConcert.length;i++) {
+photoDB.remove({}, { multi: true }, (err, numRemoved) => {
+  for (var i = 0; i < mainPhoto.mainConcert.length; i++) {
     var data = mainPhoto.mainConcert[i]
     if (data.status) {
       // console.log(data, i)
@@ -129,8 +150,8 @@ photoDB.remove({}, {multi: true}, (err, numRemoved) => {
         const s = '000' + String(num)
         return s.substr(s.length - 3, 3)
       }
-      for (var j=0;j<data.count;j++) {
-        var add = z(j+1) + '.jpg'
+      for (var j = 0; j < data.count; j++) {
+        var add = z(j + 1) + '.jpg'
         list = list.concat(add)
       }
       // console.log(data, i, list)
@@ -139,7 +160,7 @@ photoDB.remove({}, {multi: true}, (err, numRemoved) => {
         status: data.status,
         baseSrcThumbnail: data.baseSrcThumbnail,
         baseSrcOriginal: data.baseSrcOriginal,
-        list: list
+        list: list,
       }
       photoDB.insert(data, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
@@ -147,7 +168,7 @@ photoDB.remove({}, {multi: true}, (err, numRemoved) => {
       })
     }
   }
-  for (var i=0;i<miniPhoto.miniConcert.length;i++) {
+  for (var i = 0; i < miniPhoto.miniConcert.length; i++) {
     var data = miniPhoto.miniConcert[i]
     if (data.status) {
       // console.log(data, i)
@@ -156,8 +177,8 @@ photoDB.remove({}, {multi: true}, (err, numRemoved) => {
         const s = '000' + String(num)
         return s.substr(s.length - 3, 3)
       }
-      for (var j=0;j<data.count;j++) {
-        var add = z(j+1) + '.jpg'
+      for (var j = 0; j < data.count; j++) {
+        var add = z(j + 1) + '.jpg'
         list = list.concat(add)
       }
       // console.log(data, i, list)
@@ -166,7 +187,7 @@ photoDB.remove({}, {multi: true}, (err, numRemoved) => {
         status: data.status,
         baseSrcThumbnail: data.baseSrcThumbnail,
         baseSrcOriginal: data.baseSrcOriginal,
-        list: list
+        list: list,
       }
       photoDB.insert(data, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
@@ -179,29 +200,29 @@ photoDB.remove({}, {multi: true}, (err, numRemoved) => {
 ////////////////////////////////////
 // Video ///////////////////////////
 ////////////////////////////////////
-videoDB.remove({}, {multi: true}, (err, numRemoved) => {
-  for (var i=0;i<mainVideo.mainConcert.length;i++) {
+videoDB.remove({}, { multi: true }, (err, numRemoved) => {
+  for (var i = 0; i < mainVideo.mainConcert.length; i++) {
     var data = mainVideo.mainConcert[i]
     if (data.status) {
-      var musiclist = {id: data.id, status: data.status, baseSrc: data.baseSrc, poster: data.poster, list: data.data}
+      var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, poster: data.poster, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
       })
     }
   }
-  for (var i=0;i<miniVideo.miniConcert.length;i++) {
+  for (var i = 0; i < miniVideo.miniConcert.length; i++) {
     var data = miniVideo.miniConcert[i]
     if (data.status) {
-      var musiclist = {id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data}
+      var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
       })
     }
   }
-  for (var i=0;i<otherVideo.otherConcert.length;i++) {
+  for (var i = 0; i < otherVideo.otherConcert.length; i++) {
     var data = otherVideo.otherConcert[i]
     if (data.status) {
-      var musiclist = {id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data}
+      var musiclist = { id: data.id, status: data.status, baseSrc: data.baseSrc, list: data.data }
       videoDB.insert(musiclist, (err, newdoc) => {
         if (err) return console.log('error: ' + err)
       })
