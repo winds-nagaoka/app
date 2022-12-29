@@ -9,22 +9,24 @@ This is The Wind Ensemble's data storage which contains concert history, practic
 Install dependencies.
 
 ```
-npm install
+yarn install
 ```
 
-## Create database
+## Make database
 
-Run `script.h` to create database.
+Run `make.sh` to create database.
 
 ```
-# chmod +x script.h
-# ./script.h
+# chmod +x make.sh
+# ./make.sh
 ```
 
 ## Run server
 
+This command will run make.sh also.
+
 ```
-node app.js
+yarn start
 ```
 
 Running web server at port 3007.
