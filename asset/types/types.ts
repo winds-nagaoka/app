@@ -81,3 +81,11 @@ export type Audio = {
   baseSrc: string
   data: { available: boolean; data: number; path: `${string}.mp3`; addtitle?: string }[]
 }
+
+export type Photo = {
+  id: `main0${TensPlace}${OnesPlace}` | `mini${string}` | string
+  status: boolean
+  baseSrcThumbnail: `${string}/thumbnail/`
+  baseSrcOriginal: `${string}/original/`
+  count: number
+}

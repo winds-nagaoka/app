@@ -1,4 +1,6 @@
-const mainConcert = [
+import type { Photo } from '../types/types'
+
+const mainConcert: Photo[] = [
   {
     id: 'main020',
     status: true,
