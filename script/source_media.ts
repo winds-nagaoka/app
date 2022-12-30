@@ -12,13 +12,13 @@ import fs from 'fs'
 import path from 'path'
 import NeDB from 'nedb'
 
+import { sourceList } from '../asset/source/source'
+import { sourceAudio } from '../asset/source/sourceAudio'
+
 const referenceDB = new NeDB({
   filename: path.join(__dirname, '../database/reference.db'),
   autoload: true,
 })
-
-import { sourceList } from '../asset/source/source'
-import { sourceAudio } from '../asset/source/sourceAudio'
 
 function referenceStatus(id: string) {
   for (var i = 0; i < sourceList.length; i++) {

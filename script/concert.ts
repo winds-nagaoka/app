@@ -11,15 +11,15 @@ import fs from 'fs'
 import path from 'path'
 import NeDB from 'nedb'
 
-const concertDB = new NeDB({
-  filename: path.join(__dirname, '../database/concert.db'),
-  autoload: true,
-})
-
 import { mainConcert } from '../asset/concert/main'
 import { miniConcert } from '../asset/concert/mini'
 import { otherConcert } from '../asset/concert/other'
 import type { MainConcert, MiniConcert, OtherConcert } from '../asset/types/types'
+
+const concertDB = new NeDB({
+  filename: path.join(__dirname, '../database/concert.db'),
+  autoload: true,
+})
 
 concertDB.remove({}, { multi: true }, (err, numRemoved) => {
   let data: MainConcert | MiniConcert | OtherConcert

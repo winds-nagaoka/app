@@ -1,4 +1,16 @@
 import express from 'express'
+import secrets from 'secrets'
+
+import { lib } from './library/library'
+import { concert } from './library/concert'
+import { audio } from './library/audio'
+import { photo } from './library/photo'
+import { video } from './library/video'
+import { practice } from './library/practice'
+import { record } from './library/record'
+import { source } from './library/source'
+import { reference } from './library/reference'
+
 const app = express()
 
 app.use(express.urlencoded({ extended: true }))
@@ -22,19 +34,6 @@ const urlSourceBase = 'https://storage.googleapis.com/winds-storage/source/'
 const urlAudioBase = 'https://storage.googleapis.com/winds-storage/archive/audio/'
 const urlVideoBase = 'https://storage.googleapis.com/winds-storage/archive/video/'
 const urlPhotoBase = 'https://storage.googleapis.com/winds-storage/archive/photo/'
-
-import { lib } from './library/library'
-import { concert } from './library/concert'
-import { audio } from './library/audio'
-import { photo } from './library/photo'
-import { video } from './library/video'
-import { practice } from './library/practice'
-import { record } from './library/record'
-import { source } from './library/source'
-import { reference } from './library/reference'
-
-// winds-nagaoka/secrets
-import secrets from 'secrets'
 
 // ルートアクセス
 app.get('/', (req, res) => {

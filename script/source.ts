@@ -12,12 +12,12 @@ import fs from 'fs'
 import path from 'path'
 import NeDB from 'nedb'
 
+import { sourceList } from '../asset/source/source'
+
 const sourceDB = new NeDB({
   filename: path.join(__dirname, '../database/source.db'),
   autoload: true,
 })
-
-import { sourceList } from '../asset/source/source'
 
 sourceDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < sourceList.length; i++) {

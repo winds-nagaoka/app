@@ -12,12 +12,12 @@ import fs from 'fs'
 import path from 'path'
 import NeDB from 'nedb'
 
+import { practiceList } from '../asset/practice/practice'
+
 const practiceDB = new NeDB({
   filename: path.join(__dirname, '../database/practice.db'),
   autoload: true,
 })
-
-import { practiceList } from '../asset/practice/practice'
 
 practiceDB.remove({}, { multi: true }, (err, numRemoved) => {
   for (var i = 0; i < practiceList.length; i++) {

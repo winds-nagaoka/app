@@ -10,7 +10,7 @@ type Session = {
 
 function authAPI(send: { session: Session }, callback: (result: boolean) => void) {
   request
-    .post('https://auth.winds-n.com/auth')
+    .post('http://localhost:3003/auth')
     .type('form')
     .send(send)
     .end((error, response) => {

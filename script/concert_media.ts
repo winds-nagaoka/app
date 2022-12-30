@@ -11,6 +11,21 @@ import fs from 'fs'
 import path from 'path'
 import NeDB from 'nedb'
 
+import { mainConcert } from '../asset/concert/main'
+import { miniConcert } from '../asset/concert/mini'
+import { otherConcert } from '../asset/concert/other'
+
+import { mainAudio } from '../asset/concert/mainAudio'
+import { miniAudio } from '../asset/concert/miniAudio'
+import { otherAudio } from '../asset/concert/otherAudio'
+
+import { mainPhoto } from '../asset/concert/mainPhoto'
+import { miniPhoto } from '../asset/concert/miniPhoto'
+
+import { mainVideo } from '../asset/concert/mainVideo'
+import { miniVideo } from '../asset/concert/miniVideo'
+import { otherVideo } from '../asset/concert/otherVideo'
+
 const audioDB = new NeDB({
   filename: path.join(__dirname, '../database/audio.db'),
   autoload: true,
@@ -28,21 +43,6 @@ const videoDB = new NeDB({
   autoload: true,
   // timestampData: true
 })
-
-import { mainConcert } from '../asset/concert/main'
-import { miniConcert } from '../asset/concert/mini'
-import { otherConcert } from '../asset/concert/other'
-
-import { mainAudio } from '../asset/concert/mainAudio'
-import { miniAudio } from '../asset/concert/miniAudio'
-import { otherAudio } from '../asset/concert/otherAudio'
-
-import { mainPhoto } from '../asset/concert/mainPhoto'
-import { miniPhoto } from '../asset/concert/miniPhoto'
-
-import { mainVideo } from '../asset/concert/mainVideo'
-import { miniVideo } from '../asset/concert/miniVideo'
-import { otherVideo } from '../asset/concert/otherVideo'
 
 function concertTime(id: string) {
   for (var i = 0; i < mainConcert.length; i++) {

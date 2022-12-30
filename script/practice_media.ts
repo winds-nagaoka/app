@@ -12,13 +12,13 @@ import fs from 'fs'
 import path from 'path'
 import NeDB from 'nedb'
 
+import { practiceList } from '../asset/practice/practice'
+import { practiceAudio } from '../asset/practice/practiceAudio'
+
 const recordDB = new NeDB({
   filename: path.join(__dirname, '../database/record.db'),
   autoload: true,
 })
-
-import { practiceList } from '../asset/practice/practice'
-import { practiceAudio } from '../asset/practice/practiceAudio'
 
 function recordStatus(id: string) {
   for (var i = 0; i < practiceList.length; i++) {
