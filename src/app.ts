@@ -14,6 +14,7 @@ import { reference } from './library/reference'
 const app = express()
 
 app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
 // const compression = require('compression')
 // app.use(compression({
