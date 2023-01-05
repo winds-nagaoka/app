@@ -159,5 +159,5 @@ export type SourceAudio = {
   id: string
   status: boolean
   directory: `${string}/`
-  data: { available: boolean; data: number; path: `${string}.mp3`; addtitle?: string }[]
+  data: { available: boolean; data: number; path: `${string}.mp3`; add?: string }[]
 }
