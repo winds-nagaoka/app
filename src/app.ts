@@ -1,5 +1,4 @@
 import express from 'express'
-import secrets from 'secrets'
 
 import { lib } from './library/library'
 import { concert } from './library/concert'
@@ -10,6 +9,10 @@ import { practice } from './library/practice'
 import { record } from './library/record'
 import { source } from './library/source'
 import { reference } from './library/reference'
+
+import 'dotenv/config'
+
+const BBS_API_PASS = process.env.BBS_API_PASS
 
 const app = express()
 
@@ -200,7 +203,7 @@ app.post('/api/bbs', (req, res) => {
   console.log('[' + lib.showTime() + '] /api/bbs: ' + session.userid + ', (token), version: ' + session.version)
   lib.authAPI({ session }, (authResult) => {
     if (authResult) {
-      return res.json({ status: true, api: secrets.bbs.apiPass })
+      return res.json({ status: true, api: BBS_API_PASS })
     } else {
       return res.json({ status: false })
     }

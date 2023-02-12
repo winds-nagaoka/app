@@ -1,4 +1,7 @@
 import request from 'superagent'
+import 'dotenv/config'
+
+const AUTH_API_PATH = process.env.AUTH_API_PATH
 
 type Session = {
   userid: string
@@ -10,7 +13,7 @@ type Session = {
 
 function authAPI(send: { session: Session }, callback: (result: boolean) => void) {
   request
-    .post('http://localhost:3003/auth')
+    .post(AUTH_API_PATH + '/auth')
     .type('form')
     .send(send)
     .end((error, response) => {
