@@ -19,7 +19,6 @@
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "nedb": "^1.8.0",
-    "secrets": "ssh://git@github.com:ryo4004/secrets.git#add-typescript",
     "superagent": "^4.1.0"
   },
   "devDependencies": {
