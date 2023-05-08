@@ -534,7 +534,7 @@ export const miniConcert: MiniConcert[] = [
     },
     place: ['長岡リリックホール', 'ポケットステージ'],
     conductor: [{ name: '髙橋亮' }],
-    poster: 'https://winds-n.com/image/poster/mini/poster.jpg',
+    poster: 'https://winds-n.com/image/poster/mini/2023.jpg',
     guide: 'https://winds-n.com/mini2023',
     contents: [
       { label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8] },
