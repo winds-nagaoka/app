@@ -520,4 +520,42 @@ export const miniConcert: MiniConcert[] = [
       { title: 'マツケンサンバII', composer: '宮川彬良' },
     ],
   },
+  {
+    ////////////////////////////////////
+    ////// 2023年春のミニコンサート //////
+    ////////////////////////////////////
+    id: 'mini2023',
+    type: 'mini',
+    title: '春のミニコンサート2023',
+    time: {
+      date: '2023年5月6日(土)',
+      timestamp: 1683349200,
+      time: '14:00',
+    },
+    place: ['長岡リリックホール', 'ポケットステージ'],
+    conductor: [{ name: '髙橋亮' }],
+    poster: 'https://winds-n.com/image/poster/mini/poster.jpg',
+    guide: 'https://winds-n.com/mini2023',
+    contents: [
+      { label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8] },
+      { label: 'アンコール', music: [9] },
+    ],
+    data: [
+      { title: '『ポケットモンスター スカーレット・バイオレット』メインテーマ', arranger: '羽深由理' },
+      { title: 'アンパンマンのマーチ', composer: '三木たかし', arranger: '山下国俊' },
+      { title: 'ぼよよん行進曲', composer: '中西圭三', arranger: '郷間幹男' },
+      { title: 'ジャンボリミッキー！', composer: 'Marco Marinangeli', arranger: '郷間幹男' },
+      { title: 'ホール・ニュー・ワールド', composer: 'A.メンケン', arranger: '星出尚志' },
+      {
+        title: 'セレブレイション',
+        composer:
+          'Robert Earl Bell & Ronald Nathan Bell & George Melvin Brown & Robert Spike Mickens & Claydes Eugene Smith & Dennis Ronald Thomas & Earl Eugene Toon Jr & Eumir Deodato & James Warren Taylor',
+        arranger: '森村 献 & 郷間幹男',
+      },
+      { title: 'フィール・ソー・グッド', composer: 'C.マンジョーネ', arranger: '岩井直溥' },
+      { title: 'ミックスナッツ', composer: '藤原聡', arranger: '郷間幹男' },
+      { title: 'お酒ソングコレクション〜酔奏楽のための〜', arranger: '辻峰拓' },
+      { title: 'アルヴァマー序曲', composer: 'J.バーンズ' },
+    ],
+  },
 ]

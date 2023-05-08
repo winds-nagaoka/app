@@ -177,7 +177,10 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
       list = []
       const z = (num: number) => {
         const s = '000' + String(num)
-        return s.substr(s.length - 3, 3)
+        if (num < 1000) {
+          return s.substr(s.length - 3, 3)
+        }
+        return s.substr(s.length - 4, 4)
       }
       for (var j = 0; j < data.count; j++) {
         var add = z(j + 1) + '.jpg'

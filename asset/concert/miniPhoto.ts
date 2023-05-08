@@ -71,4 +71,11 @@ export const miniPhoto: Photo[] = [
     baseSrcOriginal: 'mini2021/original/',
     count: 590,
   },
+  {
+    id: 'mini2023',
+    status: true,
+    baseSrcThumbnail: 'mini2023/thumbnail/',
+    baseSrcOriginal: 'mini2023/original/',
+    count: 1305,
+  },
 ]
