@@ -532,13 +532,13 @@ export const miniConcert: MiniConcert[] = [
       timestamp: 1683349200,
       time: '14:00',
     },
-    place: ['長岡リリックホール', 'ポケットステージ'],
+    place: ['長岡リリックホール', 'コンサートホール'],
     conductor: [{ name: '髙橋亮' }],
     poster: 'https://winds-n.com/image/poster/mini/2023.jpg',
     guide: 'https://winds-n.com/mini2023',
     contents: [
       { label: 'プログラム', music: [0, 1, 2, 3, 4, 5, 6, 7, 8] },
-      { label: 'アンコール', music: [9] },
+      { label: 'アンコール', music: [9, 10] },
     ],
     data: [
       { title: '『ポケットモンスター スカーレット・バイオレット』メインテーマ', arranger: '羽深由理' },
@@ -556,6 +556,7 @@ export const miniConcert: MiniConcert[] = [
       { title: 'ミックスナッツ', composer: '藤原聡', arranger: '郷間幹男' },
       { title: 'お酒ソングコレクション〜酔奏楽のための〜', arranger: '辻峰拓' },
       { title: 'アルヴァマー序曲', composer: 'J.バーンズ' },
+      { title: 'ジャンボリミッキー！', composer: 'Marco Marinangeli', arranger: '郷間幹男' },
     ],
   },
 ]
