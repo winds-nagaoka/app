@@ -1582,4 +1582,41 @@ export const mainConcert: MainConcert[] = [
       { audio: 7, title: 'ブロックM', composer: 'J.H.ビリック' },
     ],
   },
+  {
+    //////////////////////////////////
+    ////// 第36回定期演奏会データ //////
+    //////////////////////////////////
+    id: 'main036',
+    type: 'main',
+    title: '第36回定期演奏会',
+    time: {
+      timestamp: 1699765200,
+      date: '2023年11月12日(日)',
+      time: '14:00',
+      label: '開演',
+    },
+    place: ['長岡リリックホール', 'コンサートホール'],
+    conductor: [{ name: '河本隆吉' }],
+    poster: 'https://winds-n.com/image/poster/main/36th.jpg',
+    guide: 'https://winds-n.com/36thconcert',
+    contents: [
+      { label: '第1部', music: [0, 1, 2] },
+      { label: '第2部', music: [3, 4] },
+      { label: 'アンコール', music: [5, 6] },
+    ],
+    data: [
+      { title: '行進曲「オーバー・ザ・ギャラクシー」', composer: '斎藤高順' },
+      { title: 'マードックからの最後の手紙 ', composer: '樽屋雅徳' },
+      { title: '宇宙の音楽', composer: 'P.スパーク' },
+      { title: 'アンダンテ・カンタービレ', composer: 'P.チャイコフスキー', arranger: '河本隆吉' },
+      {
+        title: '交響曲第2番より',
+        composer: 'A.ボロディン',
+        arranger: '河本隆吉',
+        movement: ['第3楽章', '第4楽章'],
+      },
+      { title: 'ストレンジャー・イン・パラダイス', composer: 'R.ライト & G.フォレスト', arranger: '小野崎孝輔' },
+      { title: 'ブロックM', composer: 'J.H.ビリック' },
+    ],
+  },
 ]
