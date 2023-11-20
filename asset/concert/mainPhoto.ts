@@ -106,4 +106,11 @@ export const mainPhoto: Photo[] = [
     baseSrcOriginal: '34th/original/',
     count: 399,
   },
+  {
+    id: 'main036',
+    status: true,
+    baseSrcThumbnail: '36th/thumbnail/',
+    baseSrcOriginal: '36th/original/',
+    count: 1240,
+  },
 ]
