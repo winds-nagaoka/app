@@ -148,8 +148,13 @@ photoDB.remove({}, { multi: true }, (err, numRemoved) => {
       // console.log(data, i)
       list = []
       const z = (num: number) => {
-        const s = '000' + String(num)
-        return s.substr(s.length - 3, 3)
+        // 写真が1000枚以上の場合はファイル名を[5桁].jpgにした
+        // 1000枚未満の場合は[3桁].jpgになっている
+        if (data.count > 999) {
+          return String(num).padStart(5, '0')
+        } else {
+          return String(num).padStart(3, '0')
+        }
       }
       for (var j = 0; j < data.count; j++) {
         var add = z(j + 1) + '.jpg'
