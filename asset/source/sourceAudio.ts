@@ -2,20 +2,18 @@ import type { SourceAudio } from '../types/types'
 
 export const sourceAudio: SourceAudio[] = [
   {
-    id: 'main035',
+    id: 'main037',
     status: true,
-    directory: 'source_2022winds/',
+    directory: 'source_2024winds/',
     data: [
-      { available: true, data: 0, path: 'thunderbirds.mp3' },
-      { available: true, data: 1, path: 'songofsea.mp3' },
-      { available: true, data: 2, path: 'sentochihiro.mp3' },
-      { available: true, data: 3, path: 'musicforafestival1.mp3', add: '第1楽章 con brio' },
-      { available: true, data: 3, path: 'musicforafestival2.mp3', add: '第2楽章 andantino' },
-      { available: true, data: 3, path: 'musicforafestival3.mp3', add: '第3楽章 vivo' },
-      { available: true, data: 4, path: 'yellmarch.mp3' },
-      { available: true, data: 5, path: 'fontanediroma.mp3' },
-      { available: true, data: 6, path: 'londonderry.mp3' },
-      { available: true, data: 7, path: 'blockm.mp3' },
+      { available: true, data: 0, path: '001.mp3' },
+      { available: true, data: 1, path: '002.mp3' },
+      { available: true, data: 2, path: '003.mp3' },
+      { available: true, data: 3, path: '004.mp3', },
+      { available: true, data: 4, path: '005.mp3', add: '第4楽章「断頭台への行進」' },
+      { available: true, data: 4, path: '006.mp3', add: '第5楽章「魔女の夜宴の夢」' },
+      { available: true, data: 5, path: '007.mp3' },
+      { available: true, data: 6, path: '008.mp3' },
     ],
   },
 ]
